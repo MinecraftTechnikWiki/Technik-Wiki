@@ -1,0 +1,20 @@
+{
+	"display":
+	{
+		"icon":
+		{
+			"item":"minecraft:feather"
+		},
+		"title":"Spielern kann geholfen werden!",
+		"frame":"goal",
+		"description":"Tippe im Befehlsbuch den Befehl /Hilfe ein."
+	},
+	"parent":"technik_wiki:tw_befehlsbuch",
+	"criteria":
+	{
+		"Kriterium":
+		{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}

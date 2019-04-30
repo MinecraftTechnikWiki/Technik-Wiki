@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:oak_button",
+    "minecraft:water_bucket",
+    "minecraft:lava_bucket",
+    "minecraft:experience_bottle",
+    "minecraft:tnt",
+    "minecraft:tnt_minecart",
+    "minecraft:end_crystal",
+    "minecraft:lingering_potion",
+    "minecraft:barrier",
+    "minecraft:hopper",
+    "minecraft:hopper_minecart",
+    "minecraft:creeper_spawn_egg",
+    "minecraft:enderman_spawn_egg"
+  ]
+}

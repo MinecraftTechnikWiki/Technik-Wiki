@@ -1,0 +1,20 @@
+{
+	"display":
+	{
+		"icon":
+		{
+			"item":"minecraft:writable_book"
+		},
+		"title":"Das Buch der Befehle",
+		"frame":"task",
+		"description":"Tippe im Befehlsbuch einen Befehl ein."
+	},
+	"parent":"technik_wiki:tw_technik_wiki",
+	"criteria":
+	{
+		"Kriterium":
+		{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"display":
+	{
+		"icon":
+		{
+			"item":"minecraft:sticky_piston"
+		},
+		"title":
+		{
+			"text":"Technik Wiki",
+			"color":"gold"
+		},
+		"frame":"task",
+		"background":"textures:block/sandstone.png",
+		"description":
+		[
+			{
+				"text":"Das Lexikon der Techniken",
+				"color":"green"
+			}
+		]
+	},
+	"criteria":
+	{
+		"Kriterium":
+		{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}

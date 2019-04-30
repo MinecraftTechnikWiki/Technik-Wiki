@@ -1,0 +1,20 @@
+{
+	"display":
+	{
+		"icon":
+		{
+			"item":"minecraft:player_head"
+		},
+		"title":"Spiele mit Freunden",
+		"frame":"challenge",
+		"description":"Spiele diese Welt mit Mitspielern im LAN oder auf einem Server."
+	},
+	"parent":"technik_wiki:tw_technik_wiki",
+	"criteria":
+	{
+		"Kriterium":
+		{
+			"trigger":"minecraft:impossible"
+		}
+	}
+}
