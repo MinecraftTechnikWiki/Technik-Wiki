@@ -1,5 +1,5 @@
-# Copyright by Nethonos
 
+execute if entity @s[scores={TW=..13999}] run function technik_wiki:tw_gruppe_systeme
 execute if entity @s[scores={TW=..12999}] run function technik_wiki:tw_gruppe_maschinen
 execute if entity @s[scores={TW=..11999}] run function technik_wiki:tw_gruppe_seeverkehrsanlagen
 execute if entity @s[scores={TW=..10999}] run function technik_wiki:tw_gruppe_schienenverkehrsanlagen

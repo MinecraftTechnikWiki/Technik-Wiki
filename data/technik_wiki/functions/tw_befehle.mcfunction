@@ -1,4 +1,3 @@
-# Copyright by Nethonos
 
 execute at @s store success score @s TW_Erfolg run fill ~2 ~ ~2 ~-2 ~ ~-2 minecraft:oak_button[face=floor,powered=false] replace minecraft:oak_button[face=floor,powered=true]
 replaceitem entity @s[scores={TW_Erfolg=1}] hotbar.8 minecraft:writable_book{TW_Befehlsbuch:true,pages:["/Startpunkt"],display:{Name:"{\"translate\":\"Befehlsbuch\",\"color\":\"light_purple\",\"italic\":false}"} }
@@ -15,7 +14,7 @@ advancement grant @s[tag=TW_Buch,scores={TW=2..},advancements={technik_wiki:tw_b
 tellraw @s[tag=TW_Buch,scores={TW=1}] ["",{"translate":"Unbekannter Befehlsbuchbefehl. Tippe /Hilfe ein, um eine Liste von Befehlsbuchbefehlen zu erhalten.","color":"red"}]
 tag @s[tag=TW_Buch,scores={TW=1..}] remove TW_Buch
 
-replaceitem entity @s[tag=!TW_Buch] hotbar.8 minecraft:writable_book{TW_Befehlsbuch:true,pages:["/"],display:{Name:"{\"translate\":\"Befehlsbuch\",\"color\":\"light_purple\",\"italic\":false}",Lore:["Tippe hier einen Befehl ein","(ohne Enter) und drücke","Fertig. Beispiel: /Hilfe um","eine Übersicht über alle","eigens für diese Welt","geschaffenen (Vanilla)","Befehle zu erhalten"]} }
+replaceitem entity @s[tag=!TW_Buch] hotbar.8 minecraft:writable_book{TW_Befehlsbuch:true,pages:["/"],display:{Name:"{\"translate\":\"Befehlsbuch\",\"color\":\"light_purple\",\"italic\":false}",Lore:['"Tippe hier einen Befehl ein"','"(ohne Enter) und drücke"','"Fertig. Beispiel: /Hilfe um"','"eine Übersicht über alle"','"eigens für diese Welt"','"geschaffenen (Vanilla)"','"Befehle zu erhalten"']} }
 
 scoreboard players set @s[scores={TW=1..}] TW 0
 tag @s[tag=TW_Buch] remove TW_Buch

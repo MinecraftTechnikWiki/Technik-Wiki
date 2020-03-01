@@ -1,8 +1,7 @@
-# Copyright by Nethonos
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Verkehrsanlagen"]} }]}] TW 8000
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/8000"]} }]}] TW 8000
-tellraw @s[scores={TW=8000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Verkehrsanlagen","color":"yellow","extra":[{"text":" (8000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Verkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Verkehrsanlagen"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=8000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Verkehrsanlagen","color":"yellow","extra":[{"text":" (8000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Verkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Verkehrsanlagen"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Sprintgang"]}}]}] TW 8001
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/8001"]}}]}] TW 8001
@@ -19,9 +18,9 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/8003"]}}]}] TW 
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=8003}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Rolltreppe","color":"yellow","extra":[{"text":" (8003)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Rolltreppe"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Rolltreppe"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=8003}] -260 27 92 90 ~
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Sprungschacht"]}}]}] TW 8004
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Treppen-Aufzug"]}}]}] TW 8004
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/8004"]}}]}] TW 8004
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=8004}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Sprungschacht","color":"yellow","extra":[{"text":" (8004)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Sprungschacht"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Sprungschacht"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=8004}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Treppen-Aufzug","color":"yellow","extra":[{"text":" (8004)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Treppen-Aufzug"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Treppen-Aufzug"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=8004}] -260 27 60 90 ~
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Sprungfeld"]}}]}] TW 8005

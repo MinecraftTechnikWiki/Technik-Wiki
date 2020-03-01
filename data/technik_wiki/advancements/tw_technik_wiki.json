@@ -11,7 +11,7 @@
 			"color":"gold"
 		},
 		"frame":"task",
-		"background":"textures:block/sandstone.png",
+		"background":"minecraft:textures/block/sandstone.png",
 		"description":
 		[
 			{

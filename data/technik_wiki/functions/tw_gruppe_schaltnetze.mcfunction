@@ -1,32 +1,31 @@
-# Copyright by Nethonos
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Schaltnetze"]} }]}] TW 3000
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/3000"]} }]}] TW 3000
-tellraw @s[scores={TW=3000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Schaltnetze","color":"yellow","extra":[{"text":" (3000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Schaltnetze"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Schaltnetze"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=3000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Schaltnetze","color":"yellow","extra":[{"text":" (3000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Schaltnetze"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Schaltnetze"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Zähler"]}}]}] TW 3001
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/3001"]}}]}] TW 3001
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3001}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Zähler","color":"yellow","extra":[{"text":" (3001)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Zähler"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Zähler"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=3001}] 251 27 580 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Addierer"]}}]}] TW 3002
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Halbaddierer"]}}]}] TW 3002
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/3002"]}}]}] TW 3002
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3002}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Addierer","color":"yellow","extra":[{"text":" (3002)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Addierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Addierer"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3002}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Halbaddierer","color":"yellow","extra":[{"text":" (3002)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Halbaddierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Halbaddierer"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=3002}] 124 27 579 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Subtrahierer"]}}]}] TW 3003
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Volladdierer"]}}]}] TW 3003
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/3003"]}}]}] TW 3003
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3003}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Subtrahierer","color":"yellow","extra":[{"text":" (3003)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Subtrahierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Subtrahierer"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3003}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Volladdierer","color":"yellow","extra":[{"text":" (3003)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Volladdierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Volladdierer"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=3003}] 60 27 579 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Multiplizierer"]}}]}] TW 3004
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Halbsubtrahierer"]}}]}] TW 3004
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/3004"]}}]}] TW 3004
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3004}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Multiplizierer","color":"yellow","extra":[{"text":" (3004)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Multiplizierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Multiplizierer"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3004}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Halbsubtrahierer","color":"yellow","extra":[{"text":" (3004)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Halbsubtrahierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Halbsubtrahierer"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=3004}] -4 27 579 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Dividierer"]}}]}] TW 3005
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Vollsubtrahierer"]}}]}] TW 3005
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/3005"]}}]}] TW 3005
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3005}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Dividierer","color":"yellow","extra":[{"text":" (3005)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Dividierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Dividierer"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3005}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Vollsubtrahierer","color":"yellow","extra":[{"text":" (3005)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Vollsubtrahierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Vollsubtrahierer"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=3005}] -68 27 579 0 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Bitschieber"]}}]}] TW 3006
@@ -39,9 +38,9 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3007}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kodierer und Dekodierer","color":"yellow","extra":[{"text":" (3007)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kodierer und Dekodierer"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kodierer_und_Dekodierer"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=3007}] -132 27 579 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Zahlenanzeige"]}}]}] TW 3008
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Zahlen-Anzeige"]}}]}] TW 3008
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/3008"]}}]}] TW 3008
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3008}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Zahlenanzeige","color":"yellow","extra":[{"text":" (3008)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Zahlenanzeige"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Zahlenanzeige"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=3008}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Zahlen-Anzeige","color":"yellow","extra":[{"text":" (3008)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Zahlen-Anzeige"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Zahlen-Anzeige"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=3008}] -196 27 579 0 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Vergleicher"]}}]}] TW 3009

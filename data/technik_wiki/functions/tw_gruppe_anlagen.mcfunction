@@ -1,8 +1,7 @@
-# Copyright by Nethonos
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Anlagen"]} }]}] TW 6000
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6000"]} }]}] TW 6000
-tellraw @s[scores={TW=6000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Anlagen","color":"yellow","extra":[{"text":" (6000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Anlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Anlagen"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=6000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Anlagen","color":"yellow","extra":[{"text":" (6000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Anlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Anlagen"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Block-Tauschanlage"]}}]}] TW 6001
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/6001"]}}]}] TW 6001
@@ -19,14 +18,14 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6003}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Block-Speicher","color":"yellow","extra":[{"text":" (6003)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Block-Speicher"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Block-Speicher"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6003}] -420 27 92 90 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Zielauswahl"]}}]}] TW 6004
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Einfachauswahl"]}}]}] TW 6004
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/6004"]}}]}] TW 6004
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6004}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Zielauswahl","color":"yellow","extra":[{"text":" (6004)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Zielauswahl"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Zielauswahl"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6004}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Einfachauswahl","color":"yellow","extra":[{"text":" (6004)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Einfachauswahl"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Einfachauswahl"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6004}] -420 27 28 90 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Mehrauswahl"]}}]}] TW 6005
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Mehrfachauswahl"]}}]}] TW 6005
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/6005"]}}]}] TW 6005
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6005}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Mehrauswahl","color":"yellow","extra":[{"text":" (6005)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Mehrauswahl"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Mehrauswahl"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6005}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Mehrfachauswahl","color":"yellow","extra":[{"text":" (6005)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Mehrfachauswahl"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Mehrfachauswahl"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6005}] -420 27 -36 90 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Lichtanlage"]}}]}] TW 6006
@@ -75,14 +74,14 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6014}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"TNT-Kanone","color":"yellow","extra":[{"text":" (6014)"}],"hoverEvent":{"action":"show_text","value":{"translate":"TNT-Kanone"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/TNT-Kanone"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6014}] -581 27 187 90 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Ambossanlage"]}}]}] TW 6015
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Ambossspender"]}}]}] TW 6015
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/6015"]}}]}] TW 6015
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6015}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Ambossanlage","color":"yellow","extra":[{"text":" (6015)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Ambossanlage"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Ambossanlage"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6015}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Ambossspender","color":"yellow","extra":[{"text":" (6015)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Ambossspender"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Ambossspender"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6015}] -580 27 60 90 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Partikel-Markierung"]}}]}] TW 6016
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Standort-Markierung"]}}]}] TW 6016
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/6016"]}}]}] TW 6016
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6016}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Partikel-Markierung","color":"yellow","extra":[{"text":" (6016)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Partikel-Markierung"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Partikel-Markierung"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6016}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Standort-Markierung","color":"yellow","extra":[{"text":" (6016)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Standort-Markierung"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Standort-Markierung"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6016}] -580 27 -4 90 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Zonen-Markierung"]}}]}] TW 6017
@@ -125,9 +124,9 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6024}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Parcours","color":"yellow","extra":[{"text":" (6024)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Parcours"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Parcours"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6024}] -580 27 -388 90 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Labyrinth und Irrgarten"]}}]}] TW 6025
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Labyrinth- und Irrgartengenerator"]}}]}] TW 6025
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/6025"]}}]}] TW 6025
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6025}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Labyrinth und Irrgarten","color":"yellow","extra":[{"text":" (6025)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Labyrinth und Irrgarten"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Labyrinth_und_Irrgarten"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6025}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Labyrinth- und Irrgartengenerator","color":"yellow","extra":[{"text":" (6025)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Labyrinth- und Irrgartengenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Labyrinth-_und_Irrgartengenerator"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6025}] -581 27 -453 90 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Konstruktionsgerüst"]}}]}] TW 6026

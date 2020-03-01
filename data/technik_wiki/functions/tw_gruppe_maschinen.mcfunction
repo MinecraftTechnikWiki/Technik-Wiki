@@ -1,12 +1,11 @@
-# Copyright by Nethonos
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Maschinen"]} }]}] TW 12000
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12000"]} }]}] TW 12000
-tellraw @s[scores={TW=12000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Maschinen","color":"yellow","extra":[{"text":" (12000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Maschinen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Maschinen"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=12000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Maschinen","color":"yellow","extra":[{"text":" (12000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Maschinen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Maschinen"} },{"text":"'","bold":true}]
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Drop-Kanal"]}}]}] TW 12001
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Drop-Förderband"]}}]}] TW 12001
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12001"]}}]}] TW 12001
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12001}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Drop-Kanal","color":"yellow","extra":[{"text":" (12001)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Drop-Kanal"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Drop-Kanal"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12001}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Drop-Förderband","color":"yellow","extra":[{"text":" (12001)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Drop-Förderband"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Drop-Förderband"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12001}] -253 27 -260 180 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Drop-Aufzug"]}}]}] TW 12002
@@ -54,9 +53,9 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12010"]}}]}] TW
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12010}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Tauschmaschine","color":"yellow","extra":[{"text":" (12010)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Tauschmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Tauschmaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12010}] 164 27 -261 180 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Bank"]}}]}] TW 12011
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Bankautomat"]}}]}] TW 12011
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12011"]}}]}] TW 12011
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12011}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Bank","color":"yellow","extra":[{"text":" (12011)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Bank"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Bank"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12011}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Bankautomat","color":"yellow","extra":[{"text":" (12011)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Bankautomat"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Bankautomat"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12011}] 291 27 -260 180 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Ofenmaschine"]}}]}] TW 12012
@@ -69,9 +68,9 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12013"]}}]}] TW
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12013}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Braumaschine","color":"yellow","extra":[{"text":" (12013)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Braumaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Braumaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12013}] 387 27 -260 180 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Rezepterstellmaschine"]}}]}] TW 12014
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Werkbank-Rezeptmaschine"]}}]}] TW 12014
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12014"]}}]}] TW 12014
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12014}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Rezepterstellmaschine","color":"yellow","extra":[{"text":" (12014)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Rezepterstellmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Rezepterstellmaschine"} },{"text":"'","bold":true}]
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12014}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Werkbank-Rezeptmaschine","color":"yellow","extra":[{"text":" (12014)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Werkbank-Rezeptmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Werkbank-Rezeptmaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12014}] 451 27 -260 180 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Zaubertischmaschine"]}}]}] TW 12015
@@ -94,83 +93,22 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12018"]}}]}] TW
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12018}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Glücksspielmaschine","color":"yellow","extra":[{"text":" (12018)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Glücksspielmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Glücksspielmaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12018}] 579 27 -260 180 0
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kisten-Beladestation"]}}]}] TW 12019
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12019"]}}]}] TW 12019
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12019}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kisten-Beladestation","color":"yellow","extra":[{"text":" (12019)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kisten-Beladestation"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kisten-Beladestation"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12019}] 35 27 -292 180 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Mausklick-Sensor"]}}]}] TW 12101
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12101"]}}]}] TW 12101
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12101}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Mausklick-Sensor","color":"yellow","extra":[{"text":" (12101)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Mausklick-Sensor"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Mausklick-Sensor"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12101}] -253 27 -420 180 0
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kisten-Entladestation"]}}]}] TW 12020
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12020"]}}]}] TW 12020
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12020}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kisten-Entladestation","color":"yellow","extra":[{"text":" (12020)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kisten-Entladestation"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kisten-Entladestation"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12020}] 67 27 -292 180 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Eingabe-System"]}}]}] TW 12102
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12102"]}}]}] TW 12102
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12102}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Eingabe-System","color":"yellow","extra":[{"text":" (12102)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Eingabe-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Eingabe-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12102}] -221 27 -420 180 0
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kampfmaschine"]}}]}] TW 12021
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12021"]}}]}] TW 12021
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12021}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kampfmaschine","color":"yellow","extra":[{"text":" (12021)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kampfmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kampfmaschine"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12021}] 68 27 -421 180 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Hungerpunkt-System"]}}]}] TW 12103
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12103"]}}]}] TW 12103
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12103}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Hungerpunkt-System","color":"yellow","extra":[{"text":" (12103)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Hungerpunkt-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Hungerpunkt-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12103}] -189 27 -420 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Lebenspunkte-System"]}}]}] TW 12104
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12104"]}}]}] TW 12104
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12104}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Lebenspunkte-System","color":"yellow","extra":[{"text":" (12104)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Lebenspunkte-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Lebenspunkte-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12104}] -189 27 -452 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Werkzeug-System"]}}]}] TW 12116
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12116"]}}]}] TW 12116
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12116}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Werkzeug-System","color":"yellow","extra":[{"text":" (12116)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Werkzeug-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Werkzeug-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12116}] 35 27 -452 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Teleporter"]}}]}] TW 12105
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12105"]}}]}] TW 12105
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12105}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Teleporter","color":"yellow","extra":[{"text":" (12105)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Teleporter"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Teleporter"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12105}] -157 27 -420 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kontrollpunkt-System"]}}]}] TW 12106
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12106"]}}]}] TW 12106
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12106}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kontrollpunkt-System","color":"yellow","extra":[{"text":" (12106)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kontrollpunkt-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kontrollpunkt-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12106}] -93 27 -420 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Wegfindungssystem"]}}]}] TW 12107
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12107"]}}]}] TW 12107
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12107}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Wegfindungssystem","color":"yellow","extra":[{"text":" (12107)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Wegfindungssystem"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Wegfindungssystem"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12107}] -29 27 -452 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Befehlerstell-System"]}}]}] TW 12108
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12108"]}}]}] TW 12108
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12108}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Befehlerstell-System","color":"yellow","extra":[{"text":" (12108)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Befehlerstell-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Befehlerstell-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12108}] -29 27 -420 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Sammel-System"]}}]}] TW 12109
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12109"]}}]}] TW 12109
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12109}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Sammel-System","color":"yellow","extra":[{"text":" (12109)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Sammel-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Sammel-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12109}] 3 27 -420 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Zonen-System"]}}]}] TW 12110
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12110"]}}]}] TW 12110
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12110}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Zonen-System","color":"yellow","extra":[{"text":" (12110)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Zonen-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Zonen-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12110}] 3 27 -452 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Auftrag-System"]}}]}] TW 12111
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12111"]}}]}] TW 12111
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12111}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Auftrag-System","color":"yellow","extra":[{"text":" (12111)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Auftrag-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Auftrag-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12111}] 35 27 -420 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kampfmaschine"]}}]}] TW 12112
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12112"]}}]}] TW 12112
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12112}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kampfmaschine","color":"yellow","extra":[{"text":" (12112)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kampfmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kampfmaschine"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12112}] 68 27 -421 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kampfschiff"]}}]}] TW 12113
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12113"]}}]}] TW 12113
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12113}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kampfschiff","color":"yellow","extra":[{"text":" (12113)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kampfschiff"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kampfschiff"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12113}] 668 82 -567 90 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Minispiel-System"]}}]}] TW 12114
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12114"]}}]}] TW 12114
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12114}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Minispiel-System","color":"yellow","extra":[{"text":" (12114)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Minispiel-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Minispiel-System"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12114}] 324 27 -421 180 0
-
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Handlungssystem-Element"]}}]}] TW 12115
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12115"]}}]}] TW 12115
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12115}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Handlungssystem-Element","color":"yellow","extra":[{"text":" (12115)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Handlungssystem-Element"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Handlungssystem-Element"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12115}] 644 27 -261 180 0
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kampfschiff"]}}]}] TW 12022
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12022"]}}]}] TW 12022
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12022}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kampfschiff","color":"yellow","extra":[{"text":" (12022)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kampfschiff"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kampfschiff"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12022}] 668 82 -567 90 0

@@ -1,5 +1,3 @@
-# Copyright by Nethonos
-
 # Nachricht für erfolgreiches laden der Funktion
 tellraw @a ["",{"translate":"Technik-Wiki-Funktionen wurden geladen","color":"green","bold":true}]
 

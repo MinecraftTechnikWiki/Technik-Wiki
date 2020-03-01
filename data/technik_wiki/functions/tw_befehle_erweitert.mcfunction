@@ -1,4 +1,3 @@
-# Copyright by Nethonos
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Hilfe"]} }]}] TW 2
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/h"]} }]}] TW 2
@@ -23,8 +22,8 @@ execute if entity @s[scores={TW=30002}] run gamerule randomTickSpeed 3
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"/!Befehlsbuch /!bu","bold":true},{"text":" -- Spielmodus: Kein Befehlsbuch"}]
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/!Befehlsbuch"]} }]}] TW 30003
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/!bu"]} }]}] TW 30003
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/!Befehlsbuch"] } } ] }] TW 30003
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/!bu"] } } ] }] TW 30003
 tag @s[scores={TW=30003}] add TW_Kein_Buch
 execute if entity @s[scores={TW=30003},tag=TW_Kein_Buch] at @s run spreadplayers ~ ~ 0 1 false @s
 replaceitem entity @s[scores={TW=30003}] hotbar.8 minecraft:writable_book{TW_Befehlsbuch:true,pages:["/Startzeit","/Schaltfläche"],display:{Name:"{\"translate\":\"Befehlsbuch\",\"color\":\"light_purple\",\"italic\":false}"} }

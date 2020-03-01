@@ -1,5 +1,3 @@
-# Copyright by Nethonos
-
 # Wenn Zuschauer wieder in den Kreativmodus wechseln möchten und keine Nachricht im Chat dafür bekommen haben
 replaceitem entity @s[x=0,y=49,z=0,distance=..3,gamemode=spectator] hotbar.8 minecraft:writable_book{TW_Befehlsbuch:true,pages:["/Kreativ"],display:{Name:"{\"translate\":\"Befehlsbuch\",\"color\":\"light_purple\",\"italic\":false}"} }
 
@@ -56,21 +54,22 @@ replaceitem entity @s[tag=TW_AUT,nbt=!{Inventory:[{Slot:103b,id:"minecraft:white
 replaceitem entity @s[tag=TW_CHE,nbt=!{Inventory:[{Slot:103b,id:"minecraft:red_banner",tag:{TW_CHE:true} }]}] armor.head minecraft:red_banner{TW_CHE:true,display:{Name:"{\"text\":\"Schweizflagge\",\"color\":\"light_purple\",\"italic\":false}"},BlockEntityTag:{Patterns:[{Pattern:"cs",Color:0},{Pattern:"ms",Color:0},{Pattern:"bo",Color:14},{Pattern:"ts",Color:14},{Pattern:"bs",Color:14}]} }
 
 # Symbol für Technikgruppen
+execute at @e[type=minecraft:item,tag=TW_Zentrierung] run particle minecraft:witch ~ ~ ~ 0 0 0 0.1 10 force @s[tag=TW_Erweitert]
+execute as @e[type=minecraft:item,tag=TW_Zentrierung] at @s align xyz run teleport @s ~0.5 ~-1 ~0.5
+execute as @e[type=minecraft:item,tag=TW_Zentrierung,nbt={OnGround:true}] run data merge entity @s {NoGravity:true,Tags:["TW_Symbol","TW_Entfernen"],Motion:[0.0d,0.0d,0.0d]}
+execute at @s[tag=TW_Gegenstand,scores={TW_Gegenstand=1..}] run kill @e[distance=..1,type=minecraft:item,tag=TW_Symbol,sort=nearest,limit=1]
 execute at @s[tag=TW_Gegenstand,scores={TW_Gegenstand=1..}] run data merge entity @e[type=minecraft:item,distance=..3,sort=nearest,limit=1] {Tags:["TW_Symbol","TW_Entfernen","TW_Zentrierung"],Age:-32768s,PickupDelay:32767s}
 scoreboard players set @s[tag=TW_Gegenstand,scores={TW_Gegenstand=1..}] TW_Gegenstand 0
-execute at @e[type=minecraft:item,tag=TW_Zentrierung] run particle minecraft:witch ~ ~ ~ 0 0 0 0.1 10 force @s[tag=TW_Erweitert]
-execute as @e[type=minecraft:item,tag=TW_Zentrierung] at @s align xz positioned ~0.5 ~ ~0.5 run teleport @s ~ ~ ~
-tag @e[type=minecraft:item,tag=TW_Zentrierung,nbt={OnGround:true}] remove TW_Zentrierung
 
 # Spieler die nicht Erweitert sind dürfen bestimmte Gegenstände nicht nutzen
 execute if entity @s[tag=!TW_Erweitert] store success score @s TW_Erfolg run clear @s #technik_wiki:tw_verboten
 tellraw @s[tag=!TW_Erweitert,scores={TW_Erfolg=1..}] ["",{"translate":"Diesen Gegenstand darf man nicht bei sich tragen!","color":"red","bold":true}]
 
 # Loren, Boote und TNT werden gelöscht
-execute at @e[type=minecraft:minecart] if block ~ ~-1 ~ minecraft:sandstone run tellraw @s[distance=..25] ["",{"translate":"Loren auf Sandstein werden entfernt!","color":"red"}]
-execute as @e[type=minecraft:minecart] at @s if block ~ ~-1 ~ minecraft:sandstone run kill @s
-execute at @e[type=minecraft:boat] if block ~ ~-1 ~ minecraft:sandstone run tellraw @s[distance=..25] ["",{"translate":"Boote auf Sandstein werden entfernt!","color":"red"}]
-execute as @e[type=minecraft:boat] at @s if block ~ ~-1 ~ minecraft:sandstone run kill @s
+execute at @e[type=minecraft:minecart,tag=] if block ~ ~-1 ~ minecraft:sandstone run tellraw @s[distance=..25] ["",{"translate":"Loren auf Sandstein werden entfernt!","color":"red"}]
+execute as @e[type=minecraft:minecart,tag=] at @s if block ~ ~-1 ~ minecraft:sandstone run kill @s
+execute at @e[type=minecraft:boat,tag=] if block ~ ~-1 ~ minecraft:sandstone run tellraw @s[distance=..25] ["",{"translate":"Boote auf Sandstein werden entfernt!","color":"red"}]
+execute as @e[type=minecraft:boat,tag=] at @s if block ~ ~-1 ~ minecraft:sandstone run kill @s
 execute at @s[tag=TW_Erweitert,gamemode=!spectator] run tag @e[type=minecraft:tnt,tag=!TW_Explosion,distance=..50] add TW_Explosion
 execute at @e[type=minecraft:tnt,tag=!TW_Explosion] run tellraw @s[distance=..25] ["",{"translate":"TNT wird entfernt, wenn kein erweiterter Spieler in der Nähe ist!","color":"red"}]
 kill @e[type=minecraft:tnt,tag=!TW_Explosion]

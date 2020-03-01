@@ -1,8 +1,7 @@
-# Copyright by Nethonos
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Schaltkreise"]} }]}] TW 2000
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/2000"]} }]}] TW 2000
-tellraw @s[scores={TW=2000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Schaltkreise","color":"yellow","extra":[{"text":" (2000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Schaltkreise"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Schaltkreise"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=2000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Schaltkreise","color":"yellow","extra":[{"text":" (2000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Schaltkreise"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Schaltkreise"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/Logikgatter"]}}]}] TW 2001
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,id:"minecraft:writable_book",tag:{pages:["/2001"]}}]}] TW 2001

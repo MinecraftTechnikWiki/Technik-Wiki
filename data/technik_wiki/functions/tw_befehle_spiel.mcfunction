@@ -1,4 +1,3 @@
-# Copyright by Nethonos
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Hilfe"]} }]}] TW 2
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/h"]} }]}] TW 2
@@ -34,9 +33,9 @@ tag @s[scores={TW=20003},tag=TW_Erweitert] remove TW_Erweitert
 tellraw @s[scores={TW=2}] ["",{"text":"/Version /v","bold":true},{"text":" -- Zeigt die Welt-Version an, in der man sich befindet."}]
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Version"]} }]}] TW 20004
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/v"]} }]}] TW 20004
-execute if score #TW_Welt TW matches 1 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Redstone-Welt "},{"text":"1.13a","bold":true}]
-execute if score #TW_Welt TW matches 2 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Schienen-Welt "},{"text":"1.13a","bold":true}]
-execute if score #TW_Welt TW matches 3 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Mechanik-Welt "},{"text":"1.13a","bold":true}]
+execute if score #TW_Welt TW matches 1 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Redstone-Welt "},{"text":"1.14a","bold":true}]
+execute if score #TW_Welt TW matches 2 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Schienen-Welt "},{"text":"1.14a","bold":true}]
+execute if score #TW_Welt TW matches 3 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Mechanik-Welt "},{"text":"1.14a","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"/Begrüßung /bg","bold":true},{"text":" -- Man sieht eine Titelnachricht und eine Rakete."}]
@@ -48,7 +47,7 @@ execute if score #TW_Welt TW matches 3 run title @s[scores={TW=20005}] title [""
 execute if score #TW_Welt TW matches 1 run title @s[scores={TW=20005}] subtitle ["",{"text":"auf der REDSTONE-WELT","color":"white","bold":true,"underlined":true}]
 execute if score #TW_Welt TW matches 2 run title @s[scores={TW=20005}] subtitle ["",{"text":"auf der SCHIENEN-WELT","color":"white","bold":true,"underlined":true}]
 execute if score #TW_Welt TW matches 3 run title @s[scores={TW=20005}] subtitle ["",{"text":"auf der MECHANIK-WELT","color":"white","bold":true,"underlined":true}]
-execute at @s[scores={TW=20005}] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,CustomNameVisible:true,CustomName:"{\"text\":\"Willkommen!\"}",FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions: [{Type:1b,Flicker:true,Trail:true,Colors:[I;16711680,16776960,255,65280],FadeColors:[I;255,65280,16711680,16776960]}]} } } }
+execute at @s[scores={TW=20005}] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,CustomNameVisible:true,CustomName:"{\"text\":\"Willkommen!\"}",FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Flicker:true,Trail:true,Colors:[I;16711680,16776960,255,65280],FadeColors:[I;255,65280,16711680,16776960]}]} } } }
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"/Kreativ /k","bold":true},{"text":" -- Spielmodus: Kreativ"}]
