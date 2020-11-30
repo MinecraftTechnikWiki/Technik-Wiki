@@ -1,6 +1,6 @@
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Straßenverkehrsanlagen"]} }]}] TW 9000
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/9000"]} }]}] TW 9000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Straßenverkehrsanlagen"]}}]}] TW 9000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/9000"]}}]}] TW 9000
 tellraw @s[scores={TW=9000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Straßenverkehrsanlagen","color":"yellow","extra":[{"text":" (9000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Straßenverkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Straßenverkehrsanlagen"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Straßenbrücke und -tunnel"]}}]}] TW 9001

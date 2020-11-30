@@ -1,25 +1,25 @@
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Grundmodule"]} }]}] TW 1000
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1000"]} }]}] TW 1000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Grundmodule"]}}]}] TW 1000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1000"]}}]}] TW 1000
 tellraw @s[scores={TW=1000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Grundmodule","color":"yellow","extra":[{"text":" (1000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Grundmodule"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Grundmodule"} },{"text":"'","bold":true}]
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Grund-Element"]} }]}] TW 1001
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1001"]} }]}] TW 1001
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Grund-Element"]}}]}] TW 1001
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1001"]}}]}] TW 1001
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=1001}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Grund-Element","color":"yellow","extra":[{"text":" (1001)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Grund-Element"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Grund-Element"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=1001}] 252 27 259 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Signal-Element"]} }]}] TW 1002
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1002"]} }]}] TW 1002
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Signal-Element"]}}]}] TW 1002
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1002"]}}]}] TW 1002
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=1002}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Signal-Element","color":"yellow","extra":[{"text":" (1002)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Signal-Element"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Signal-Element"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=1002}] 188 27 259 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Signalleitung"]} }]}] TW 1003
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1003"]} }]}] TW 1003
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Signalleitung"]}}]}] TW 1003
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1003"]}}]}] TW 1003
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=1003}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Signalleitung","color":"yellow","extra":[{"text":" (1003)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Signalleitung"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Signalleitung"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=1003}] 123 27 260 0 0
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Farm-Element"]} }]}] TW 1004
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1004"]} }]}] TW 1004
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Farm-Element"]}}]}] TW 1004
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/1004"]}}]}] TW 1004
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=1004}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Farm-Element","color":"yellow","extra":[{"text":" (1004)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Farm-Element"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Farm-Element"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=1004}] -4 27 259 0 0
 

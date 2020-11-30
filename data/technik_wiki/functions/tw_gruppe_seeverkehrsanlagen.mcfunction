@@ -1,6 +1,6 @@
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Seeverkehrsanlagen"]} }]}] TW 11000
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/11000"]} }]}] TW 11000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Seeverkehrsanlagen"]}}]}] TW 11000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/11000"]}}]}] TW 11000
 tellraw @s[scores={TW=11000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Seeverkehrsanlagen","color":"yellow","extra":[{"text":" (11000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Seeverkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Seeverkehrsanlagen"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kanalbrücke und -tunnel"]}}]}] TW 11002

@@ -1,6 +1,6 @@
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Verkehrsanlagen"]} }]}] TW 8000
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/8000"]} }]}] TW 8000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Verkehrsanlagen"]}}]}] TW 8000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/8000"]}}]}] TW 8000
 tellraw @s[scores={TW=8000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Verkehrsanlagen","color":"yellow","extra":[{"text":" (8000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Verkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Verkehrsanlagen"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Sprintgang"]}}]}] TW 8001

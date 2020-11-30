@@ -1,6 +1,6 @@
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Farmanlagen"]} }]}] TW 7000
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7000"]} }]}] TW 7000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Farmanlagen"]}}]}] TW 7000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7000"]}}]}] TW 7000
 tellraw @s[scores={TW=7000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Farmanlagen","color":"yellow","extra":[{"text":" (7000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Farmanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Farmanlagen"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Feldfruchtfarm"]}}]}] TW 7001
@@ -47,6 +47,11 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Blumen- und Gra
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7009"]}}]}] TW 7009
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7009}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Blumen- und Grasfarm","color":"yellow","extra":[{"text":" (7009)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Blumen- und Grasfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Blumen-_und_Grasfarm"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7009}] -228 27 259 0 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Honigfarm"]}}]}] TW 7018
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7018"]}}]}] TW 7018
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7018}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Honigfarm","color":"yellow","extra":[{"text":" (7018)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Honigfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Honigfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7018}] 60 27 355 0 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Meeresgurkenfarm"]}}]}] TW 7010
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7010"]}}]}] TW 7010
@@ -123,6 +128,11 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Fischfarm"]}}]}
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7107"]}}]}] TW 7107
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7107}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Fischfarm","color":"yellow","extra":[{"text":" (7107)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Fischfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Fischfarm"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7107}] 60 27 419 0 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Schildkrötenfarm"]}}]}] TW 7114
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7114"]}}]}] TW 7114
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7114}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Schildkrötenfarm","color":"yellow","extra":[{"text":" (7114)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Schildkrötenfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Schildkrötenfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7114}] 60 27 451 0 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Dorfbewohnerfarm"]}}]}] TW 7108
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7108"]}}]}] TW 7108

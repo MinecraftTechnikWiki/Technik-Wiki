@@ -11,7 +11,7 @@ execute if entity @s[tag=TW_Buch,scores={TW=1}] run function technik_wiki:tw_gru
 
 advancement grant @s[tag=TW_Buch,scores={TW=2..},advancements={technik_wiki:tw_befehlsbuch=false}] only technik_wiki:tw_befehlsbuch
 
-tellraw @s[tag=TW_Buch,scores={TW=1}] ["",{"translate":"Unbekannter Befehlsbuchbefehl. Tippe /Hilfe ein, um eine Liste von Befehlsbuchbefehlen zu erhalten.","color":"red"}]
+tellraw @s[tag=TW_Buch,scores={TW=1}] ["",{"text":"Unbekannter Befehlsbuchbefehl ","color":"red"},{"entity":"@s","nbt":"Inventory[{Slot:8b}].tag.pages[]","underlined":true},{"text":". Tippe /Hilfe ein, um eine Liste von Befehlsbuchbefehlen zu erhalten.","color":"red"}]
 tag @s[tag=TW_Buch,scores={TW=1..}] remove TW_Buch
 
 replaceitem entity @s[tag=!TW_Buch] hotbar.8 minecraft:writable_book{TW_Befehlsbuch:true,pages:["/"],display:{Name:"{\"translate\":\"Befehlsbuch\",\"color\":\"light_purple\",\"italic\":false}",Lore:['"Tippe hier einen Befehl ein"','"(ohne Enter) und drücke"','"Fertig. Beispiel: /Hilfe um"','"eine Übersicht über alle"','"eigens für diese Welt"','"geschaffenen (Vanilla)"','"Befehle zu erhalten"']} }

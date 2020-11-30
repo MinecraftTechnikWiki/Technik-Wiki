@@ -1,6 +1,6 @@
 
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Maschinen"]} }]}] TW 12000
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12000"]} }]}] TW 12000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Maschinen"]}}]}] TW 12000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12000"]}}]}] TW 12000
 tellraw @s[scores={TW=12000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Maschinen","color":"yellow","extra":[{"text":" (12000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Maschinen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Maschinen"} },{"text":"'","bold":true}]
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Drop-Förderband"]}}]}] TW 12001
