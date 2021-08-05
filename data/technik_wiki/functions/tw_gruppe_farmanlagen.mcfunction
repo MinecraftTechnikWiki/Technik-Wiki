@@ -58,6 +58,11 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7010"]}}]}] TW 
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7010}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Meeresgurkenfarm","color":"yellow","extra":[{"text":" (7010)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Meeresgurkenfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Meeresgurkenfarm"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7010}] 124 27 322 0 0
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Seetangfarm"]}}]}] TW 7021
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7021"]}}]}] TW 7021
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7021}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Seetangfarm","color":"yellow","extra":[{"text":" (7021)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Seetangfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Seetangfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7021}] 92 27 323 0 0
+
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Pilzfarm"]}}]}] TW 7011
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7011"]}}]}] TW 7011
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7011}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Pilzfarm","color":"yellow","extra":[{"text":" (7011)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Pilzfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Pilzfarm"} },{"text":"'","bold":true}]
@@ -67,6 +72,16 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Netherwarzenfar
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7012"]}}]}] TW 7012
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7012}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Netherwarzenfarm","color":"yellow","extra":[{"text":" (7012)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Netherwarzenfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Netherwarzenfarm"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7012}] -324 27 259 0 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Netherpilz- und -wurzelfarm"]}}]}] TW 7019
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7019"]}}]}] TW 7019
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7019}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Netherpilz- und -wurzelfarm","color":"yellow","extra":[{"text":" (7019)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Netherpilz- und -wurzelfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Netherpilz-_und_-wurzelfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7019}] -292 27 291 0 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Netherrankenfarm"]}}]}] TW 7020
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7020"]}}]}] TW 7020
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7020}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Netherrankenfarm","color":"yellow","extra":[{"text":" (7020)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Netherrankenfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Netherrankenfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7020}] -324 27 291 0 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Chorusfruchtfarm"]}}]}] TW 7013
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7013"]}}]}] TW 7013
@@ -92,6 +107,11 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Obsidiangenerat
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7017"]}}]}] TW 7017
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7017}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Obsidiangenerator","color":"yellow","extra":[{"text":" (7017)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Obsidiangenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Obsidiangenerator"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7017}] -580 27 259 0 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Basaltgenerator"]}}]}] TW 7022
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/7022"]}}]}] TW 7022
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7022}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Basaltgenerator","color":"yellow","extra":[{"text":" (7022)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Basaltgenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Basaltgenerator"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7022}] -516 27 323 0 0
 
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Hühnerfarm"]}}]}] TW 7101

@@ -28,6 +28,16 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6005"]}}]}] TW 
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6005}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Mehrfachauswahl","color":"yellow","extra":[{"text":" (6005)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Mehrfachauswahl"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Mehrfachauswahl"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6005}] -420 27 -36 90 0
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Benutzerschnittstelle"]}}]}] TW 6029
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6029"]}}]}] TW 6029
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6029}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Benutzerschnittstelle","color":"yellow","extra":[{"text":" (6029)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Benutzerschnittstelle"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzerschnittstelle"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=6029}] -484 27 -36 90 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Benutzeroberfläche"]}}]}] TW 6028
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6028"]}}]}] TW 6028
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6028}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Benutzeroberfläche","color":"yellow","extra":[{"text":" (6028)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Benutzeroberfläche"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzeroberfläche"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=6028}] -484 27 -68 90 0
+
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Lichtanlage"]}}]}] TW 6006
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6006"]}}]}] TW 6006
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6006}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Lichtanlage","color":"yellow","extra":[{"text":" (6006)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Lichtanlage"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Lichtanlage"} },{"text":"'","bold":true}]
@@ -98,6 +108,11 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Käfigzone"]}}]
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6019"]}}]}] TW 6019
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6019}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Käfigzone","color":"yellow","extra":[{"text":" (6019)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Käfigzone"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Käfigzone"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6019}] -580 27 -164 90 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Vorhalle"]}}]}] TW 6027
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6027"]}}]}] TW 6027
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6027}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Vorhalle","color":"yellow","extra":[{"text":" (6027)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Vorhalle"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Vorhalle"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=6027}] -612 27 -132 90 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Objekt-Steuerung"]}}]}] TW 6020
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/6020"]}}]}] TW 6020

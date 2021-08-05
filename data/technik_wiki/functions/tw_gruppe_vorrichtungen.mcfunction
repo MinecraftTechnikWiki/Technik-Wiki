@@ -58,10 +58,20 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5019"]}}]}] TW 
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=5019}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Licht-Sensor","color":"yellow","extra":[{"text":" (5019)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Licht-Sensor"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Licht-Sensor"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=5019}] -292 27 -100 90 0
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Shiftklick-Sensor"]}}]}] TW 5021
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5021"]}}]}] TW 5021
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=5021}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Shiftklick-Sensor","color":"yellow","extra":[{"text":" (5021)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Shiftklick-Sensor"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Shiftklick-Sensor"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=5021}] -292 27 -292 90 0
+
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Bewegungssensor"]}}]}] TW 5009
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5009"]}}]}] TW 5009
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=5009}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Bewegungssensor","color":"yellow","extra":[{"text":" (5009)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Bewegungssensor"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Bewegungssensor"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=5009}] -260 27 -132 90 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Koordinaten-Sensor"]}}]}] TW 5020
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5020"]}}]}] TW 5020
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=5020}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Koordinaten-Sensor","color":"yellow","extra":[{"text":" (5020)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Koordinaten-Sensor"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Koordinaten-Sensor"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=5020}] -324 27 -132 90 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Blickwinkel-Sensor"]}}]}] TW 5010
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5010"]}}]}] TW 5010
@@ -82,6 +92,11 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Versionen-Senso
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5013"]}}]}] TW 5013
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=5013}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Versionen-Sensor","color":"yellow","extra":[{"text":" (5013)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Versionen-Sensor"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Versionen-Sensor"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=5013}] -260 27 -292 90 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Spielbeitritt-Sensor"]}}]}] TW 5022
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5022"]}}]}] TW 5022
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=5022}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Spielbeitritt-Sensor","color":"yellow","extra":[{"text":" (5022)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Spielbeitritt-Sensor"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Spielbeitritt-Sensor"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=5022}] -292 27 -324 90 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Server-Sensor"]}}]}] TW 5014
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/5014"]}}]}] TW 5014

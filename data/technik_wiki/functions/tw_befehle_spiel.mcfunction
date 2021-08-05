@@ -31,11 +31,11 @@ tag @s[scores={TW=20003},tag=TW_Erweitert] remove TW_Erweitert
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"/Version /v","bold":true},{"text":" -- Zeigt die Welt-Version an, in der man sich befindet."}]
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Version"]} }]}] TW 20004
-scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/v"]} }]}] TW 20004
-execute if score #TW_Welt TW matches 1 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Redstone-Welt "},{"text":"1.15a","bold":true}]
-execute if score #TW_Welt TW matches 2 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Schienen-Welt "},{"text":"1.15a","bold":true}]
-execute if score #TW_Welt TW matches 3 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Mechanik-Welt "},{"text":"1.15a","bold":true}]
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Version"]}}]}] TW 20004
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/v"]}}]}] TW 20004
+execute if score #TW_Welt TW matches 1 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Redstone-Welt "},{"text":"1.16a","bold":true}]
+execute if score #TW_Welt TW matches 2 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Schienen-Welt "},{"text":"1.16a","bold":true}]
+execute if score #TW_Welt TW matches 3 run tellraw @s[scores={TW=20004}] ["",{"text":"[","color":"dark_gray"},{"text":"VERSION","color":"yellow","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Mechanik-Welt "},{"text":"1.16a","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"/Begrüßung /bg","bold":true},{"text":" -- Man sieht eine Titelnachricht und eine Rakete."}]
@@ -188,7 +188,7 @@ scoreboard players set @s[scores={TW=20023}] TW_Zeit 0
 tellraw @s[scores={TW=2}] ["",{"text":"/Fehler /err","bold":true},{"text":" -- Gibt Hinweis auf Wiki-Seite, wo ein Fehler dieser Welt gemeldet werden kann"}]
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Fehler"]}}]}] TW 20024
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/err"]}}]}] TW 20024
-tellraw @s[scores={TW=20024}] [{"text":" Melde Fehler im Technik-Wiki: ","color":"green"},{"text":"'Gemeinschaftsportal'","color":"yellow","hoverEvent":{"action":"show_text","value":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik_Wiki_Diskussion:Gemeinschaftsportal"} },"\n",{"text":" Melde Fehler im Forum: ","color":"green"},{"text":"'Unlimitedworld'","color":"yellow","hoverEvent":{"action":"show_text","value":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://uwmc.de/p9691"} }]
+tellraw @s[scores={TW=20024}] [{"text":" Melde Fehler im Technik-Wiki: ","color":"green"},{"text":"'Gemeinschaftsportal'","color":"yellow","hoverEvent":{"action":"show_text","value":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Minecraft_Wiki_Diskussion:Gemeinschaftsportal"} },"\n",{"text":" Melde Fehler im Forum: ","color":"green"},{"text":"'Unlimitedworld'","color":"yellow","hoverEvent":{"action":"show_text","value":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://uwmc.de/p9691"} }]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"/Helfer /hr","bold":true},{"text":" -- Zeigt alle Helfer für die Welt an."}]

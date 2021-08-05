@@ -53,6 +53,21 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/13010"]}}]}] TW
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=13010}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Befehle-System","color":"yellow","extra":[{"text":" (13010)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Befehle-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Befehle-System"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=13010}] -29 27 -420 180 0
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Passwort-System"]}}]}] TW 13014
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/13014"]}}]}] TW 13014
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=13014}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Passwort-System","color":"yellow","extra":[{"text":" (13014)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Passwort-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Passwort-System"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=13014}] -221 27 -452 180 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Wahl-System"]}}]}] TW 13015
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/13015"]}}]}] TW 13015
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=13015}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Wahl-System","color":"yellow","extra":[{"text":" (13015)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Wahl-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Wahl-System"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=13015}] -221 27 -484 180 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Kamera-System"]}}]}] TW 13017
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/13017"]}}]}] TW 13017
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=13017}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Kamera-System","color":"yellow","extra":[{"text":" (13017)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Kamera-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kamera-System"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=13017}] -189 27 -484 180 0
+
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Sammel-System"]}}]}] TW 13011
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/13011"]}}]}] TW 13011
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=13011}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Sammel-System","color":"yellow","extra":[{"text":" (13011)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Sammel-System"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Sammel-System"} },{"text":"'","bold":true}]

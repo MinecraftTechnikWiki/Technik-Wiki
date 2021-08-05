@@ -3,6 +3,10 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Maschinen"]}}]}
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12000"]}}]}] TW 12000
 tellraw @s[scores={TW=12000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Maschinen","color":"yellow","extra":[{"text":" (12000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Maschinen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Maschinen"} },{"text":"'","bold":true}]
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Systeme"]}}]}] TW 13000
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/13000"]}}]}] TW 13000
+tellraw @s[scores={TW=13000}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Systeme","color":"yellow","extra":[{"text":" (13000)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Systeme"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Systeme"} },{"text":"'","bold":true}]
+
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Drop-Förderband"]}}]}] TW 12001
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12001"]}}]}] TW 12001
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12001}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Drop-Förderband","color":"yellow","extra":[{"text":" (12001)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Drop-Förderband"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Drop-Förderband"} },{"text":"'","bold":true}]
@@ -68,15 +72,35 @@ scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12013"]}}]}] TW
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12013}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Braumaschine","color":"yellow","extra":[{"text":" (12013)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Braumaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Braumaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12013}] 387 27 -260 180 0
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Drop-Rezeptmaschine"]}}]}] TW 12024
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12015"]}}]}] TW 12024
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12024}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Drop-Rezeptmaschine","color":"yellow","extra":[{"text":" (12024)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Drop-Rezeptmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Drop-Rezeptmaschine"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12024}] 451 27 -292 180 0
+
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Werkbank-Rezeptmaschine"]}}]}] TW 12014
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12014"]}}]}] TW 12014
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12014}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Werkbank-Rezeptmaschine","color":"yellow","extra":[{"text":" (12014)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Werkbank-Rezeptmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Werkbank-Rezeptmaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12014}] 451 27 -260 180 0
 
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Ofen-Rezeptmaschine"]}}]}] TW 12021
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12015"]}}]}] TW 12021
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12021}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Ofen-Rezeptmaschine","color":"yellow","extra":[{"text":" (12021)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Ofen-Rezeptmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Ofen-Rezeptmaschine"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12021}] 483 27 -260 180 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Braustand-Rezeptmaschine"]}}]}] TW 12022
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12015"]}}]}] TW 12022
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12022}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Braustand-Rezeptmaschine","color":"yellow","extra":[{"text":" (12022)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Braustand-Rezeptmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Braustand-Rezeptmaschine"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12022}] 483 27 -292 180 0
+
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Zaubertisch-Rezeptmaschine"]}}]}] TW 12023
+scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12015"]}}]}] TW 12023
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12023}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Zaubertisch-Rezeptmaschine","color":"yellow","extra":[{"text":" (12023)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Zaubertisch-Rezeptmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Zaubertisch-Rezeptmaschine"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12023}] 515 27 -292 180 0
+
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Zaubertischmaschine"]}}]}] TW 12015
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12015"]}}]}] TW 12015
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12015}] [" ",{"translate":"Zum Technik-Wiki-Artikel:","color":"green"},{"text":" '","bold":true},{"text":"Zaubertischmaschine","color":"yellow","extra":[{"text":" (12015)"}],"hoverEvent":{"action":"show_text","value":{"translate":"Zaubertischmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Zaubertischmaschine"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=12015}] 483 27 -260 180 0
+teleport @s[scores={TW=12015}] 547 27 -292 180 0
 
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/Rüstungsmaschine"]}}]}] TW 12016
 scoreboard players set @s[nbt={Inventory:[{Slot:8b,tag:{pages:["/12016"]}}]}] TW 12016
