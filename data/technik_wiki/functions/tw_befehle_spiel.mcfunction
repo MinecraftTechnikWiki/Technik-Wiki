@@ -32,21 +32,18 @@ tag @s[scores={TW=20003},tag=TW_Erweitert] remove TW_Erweitert
 tellraw @s[scores={TW=2}] ["",{"text":"Version v","color":"gray","bold":true},{"text":" -- Zeigt die Welt-Version an, in der man sich befindet."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Version"} run scoreboard players set @s TW 20004
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"v"} run scoreboard players set @s TW 20004
-execute if score #TW_Welt TW matches 1 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Redstone-Welt "},{"text":"1.17a","bold":true}]
-execute if score #TW_Welt TW matches 2 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Schienen-Welt "},{"text":"1.17a","bold":true}]
-execute if score #TW_Welt TW matches 3 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Mechanik-Welt "},{"text":"1.17a","bold":true}]
+execute if score #TW_Welt TW matches 1 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Redstone-Welt "},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
+execute if score #TW_Welt TW matches 2 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Schienen-Welt "},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
+execute if score #TW_Welt TW matches 3 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Mechanik-Welt "},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Begrüßung bg","color":"gray","bold":true},{"text":" -- Man sieht eine Titelnachricht und eine Rakete."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Begrüßung"} run scoreboard players set @s TW 20005
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"bg"} run scoreboard players set @s TW 20005
-execute if score #TW_Welt TW matches 1 run title @s[scores={TW=20005}] title ["",{"text":"Willkommen!","color":"dark_red","bold":true}]
-execute if score #TW_Welt TW matches 2 run title @s[scores={TW=20005}] title ["",{"text":"Willkommen!","color":"dark_green","bold":true}]
-execute if score #TW_Welt TW matches 3 run title @s[scores={TW=20005}] title ["",{"text":"Willkommen!","color":"dark_blue","bold":true}]
-execute if score #TW_Welt TW matches 1 run title @s[scores={TW=20005}] subtitle ["",{"text":"auf der REDSTONE-WELT","color":"white","bold":true,"underlined":true}]
-execute if score #TW_Welt TW matches 2 run title @s[scores={TW=20005}] subtitle ["",{"text":"auf der SCHIENEN-WELT","color":"white","bold":true,"underlined":true}]
-execute if score #TW_Welt TW matches 3 run title @s[scores={TW=20005}] subtitle ["",{"text":"auf der MECHANIK-WELT","color":"white","bold":true,"underlined":true}]
-execute at @s[scores={TW=20005}] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,CustomNameVisible:true,CustomName:'{"text":"Willkommen!"}',FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Flicker:true,Trail:true,Colors:[I;16711680,16776960,255,65280],FadeColors:[I;255,65280,16711680,16776960]}]} } } }
+title @s[scores={TW=20005}] title ["",{"text":"Willkommen!","color":"gold","bold":true}]
+title @s[scores={TW=20005}] subtitle ["",{"text":"auf der ","color":"white","bold":true,"underlined":true},{"storage":"technik_wiki:tw_daten","nbt":"TW_Welt","interpret":true,"underlined":true}]
+
+execute at @s[scores={TW=20005}] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,CustomNameVisible:true,CustomName:'{"text":"Willkommen!","color":"gold","bold":true}',FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Flicker:true,Trail:true,Colors:[I;16711680,16776960,255,65280],FadeColors:[I;255,65280,16711680,16776960]}]} } } }
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Kreativ k","color":"gray","bold":true},{"text":" -- Spielmodus: Kreativ"}]

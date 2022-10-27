@@ -1,8 +1,6 @@
-
+# Befehlsbuch verwenden
 tag @a[nbt={SelectedItem:{tag:{TW_Befehlsbuch:true} } }] add TW_Befehlsbuch
-
 execute as @a[tag=TW_Befehlsbuch] if data entity @s SelectedItem.tag.pages at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append from entity @p SelectedItem.tag.pages[]
-
 execute as @a[scores={TW=1..}] run function technik_wiki:tw_befehle
 tag @a[tag=TW_Befehlsbuch] remove TW_Befehlsbuch
 

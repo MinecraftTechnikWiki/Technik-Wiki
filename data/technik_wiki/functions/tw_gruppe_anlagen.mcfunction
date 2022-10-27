@@ -139,6 +139,16 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"6024"} run scoreboard 
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6024}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Parcours","color":"yellow","bold":true,"extra":[{"text":" (6024)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Parcours"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Parcours"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=6024}] -580 27 -388 90 0
 
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Bestenliste"} run scoreboard players set @s TW 6030
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"6030"} run scoreboard players set @s TW 6030
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6030}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Bestenliste","color":"yellow","bold":true,"extra":[{"text":" (6030)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Bestenliste"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Bestenliste"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=6030}] -644 27 -100 90 0
+
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Mannschaftsverteiler"} run scoreboard players set @s TW 6031
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"6031"} run scoreboard players set @s TW 6031
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6031}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Mannschaftsverteiler","color":"yellow","bold":true,"extra":[{"text":" (6031)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Mannschaftsverteiler"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Mannschaftsverteiler"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=6031}] -644 27 -196 90 0
+
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Labyrinth- und Irrgartengenerator"} run scoreboard players set @s TW 6025
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"6025"} run scoreboard players set @s TW 6025
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=6025}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Labyrinth- und Irrgartengenerator","color":"yellow","bold":true,"extra":[{"text":" (6025)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Labyrinth- und Irrgartengenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Labyrinth-_und_Irrgartengenerator"} },{"text":"'","bold":true}]

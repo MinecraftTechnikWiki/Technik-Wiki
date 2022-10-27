@@ -6,6 +6,7 @@ schedule clear technik_wiki:tw_planen_20min
 data remove storage technik_wiki:tw_daten TW_Erweitert
 data remove storage technik_wiki:tw_daten TW_Info
 data remove storage technik_wiki:tw_daten TW_Hilfe
+data remove storage technik_wiki:tw_daten TW_Ziele
 
 scoreboard objectives remove TW
 scoreboard objectives remove TW_Nummer

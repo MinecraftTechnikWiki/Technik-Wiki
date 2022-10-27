@@ -1,7 +1,7 @@
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Seeverkehrsanlagen"} run scoreboard players set @s TW 11000
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"11000"} run scoreboard players set @s TW 11000
-tellraw @s[scores={TW=11000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Seeverkehrsanlagen","color":"yellow","bold":true,"extra":[{"text":" (11000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Seeverkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Seeverkehrsanlagen"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=11000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Seeverkehrsanlagen","color":"yellow","bold":true,"extra":[{"text":" (11000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Seeverkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Seeverkehrsanlagen"} },{"text":"'","bold":true}]
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Kanalbrücke und -tunnel"} run scoreboard players set @s TW 11002
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"11002"} run scoreboard players set @s TW 11002

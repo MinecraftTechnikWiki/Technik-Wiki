@@ -1,27 +1,27 @@
 
-data modify storage technik_wiki:tw_daten TW_Erweitert set value '["",{"text":"[","color":"dark_gray"},{"text":"ERWEITERT","hoverEvent":{"action":"show_text","contents":{"translate":"Erweiterter Spielmodus"} },"color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]'
+scoreboard objectives remove TW_Test
 
-data modify storage technik_wiki:tw_daten TW_Info set value '["",{"text":"[","color":"dark_gray"},{"text":"WELT-INFO","hoverEvent":{"action":"show_text","contents":{"translate":"Datenpaket aufgerufen"} },"color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]'
-
-data modify storage technik_wiki:tw_daten TW_Hilfe set value '["",{"text":"[","color":"dark_gray"},{"text":"BEFEHL","hoverEvent":{"action":"show_text","contents":{"translate":"Befehl"} },"color":"yellow","bold":true},{"text":"] ","color":"dark_gray"}]'
-
-# Alle Punkte-Ziele.
-scoreboard objectives add TW trigger ["Technik Wiki: ",{"text":"ID","bold":true}]
-scoreboard objectives add TW_Nummer dummy ["Technik Wiki: ",{"text":"Nummer der Spieler","bold":true}]
-scoreboard objectives add TW_Test dummy ["Technik Wiki: ",{"text":"Erfolg, Anzahl oder Daten","bold":true}]
-scoreboard objectives add TW_Modus trigger ["Technik Wiki: ",{"text":"Spielmodus","bold":true}]
-scoreboard objectives add TW_Zeit minecraft.custom:minecraft.time_since_rest ["Technik Wiki: ",{"text":"Spielzeit","bold":true}]
-scoreboard objectives add TW_Drop minecraft.custom:minecraft.drop ["Technik Wiki: ",{"text":"Droppen von Gegenständen","bold":true}]
-scoreboard objectives add TW_Beitritt minecraft.custom:minecraft.leave_game ["",{"text":"Beigetretene","bold":true}]
+execute store result storage technik_wiki:tw_daten TW_Ziele int 1 run function technik_wiki:tw_punkteziele
+execute store result score #TW_Ziele TW run data get storage technik_wiki:tw_daten TW_Ziele
 
 scoreboard players set #TW_Start TW 0
-scoreboard players set #TW_Ziele TW 7
+scoreboard players set #TW_Version TW 18
 
 # Welten: 1 Redstone, 2 Schiene, 3 Mechanik
 scoreboard players set #TW_Welt TW 0
 execute if block 0 48 0 minecraft:orange_concrete_powder run scoreboard players set #TW_Welt TW 1
 execute if block 0 48 0 minecraft:lime_concrete_powder run scoreboard players set #TW_Welt TW 2
 execute if block 0 48 0 minecraft:light_blue_concrete_powder run scoreboard players set #TW_Welt TW 3
+
+execute if score #TW_Welt TW matches 1 run data modify storage technik_wiki:tw_daten TW_Welt set value '{"text":"Redstone-Welt","color":"dark_red","bold":true}'
+execute if score #TW_Welt TW matches 2 run data modify storage technik_wiki:tw_daten TW_Welt set value '{"text":"Schienen-Welt","color":"dark_green","bold":true}'
+execute if score #TW_Welt TW matches 3 run data modify storage technik_wiki:tw_daten TW_Welt set value '{"text":"Mechanik-Welt","color":"dark_blue","bold":true}'
+
+data modify storage technik_wiki:tw_daten TW_Erweitert set value '["",{"text":"[","color":"dark_gray"},{"text":"ERWEITERT","hoverEvent":{"action":"show_text","contents":{"translate":"Erweiterter Spielmodus"} },"color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]'
+
+data modify storage technik_wiki:tw_daten TW_Info set value '["",{"text":"[","color":"dark_gray"},{"text":"WELT-INFO","hoverEvent":{"action":"show_text","contents":{"translate":"Datenpaket aufgerufen"} },"color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]'
+
+data modify storage technik_wiki:tw_daten TW_Hilfe set value '["",{"text":"[","color":"dark_gray"},{"text":"BEFEHL","hoverEvent":{"action":"show_text","contents":{"translate":"Befehl"} },"color":"yellow","bold":true},{"text":"] ","color":"dark_gray"}]'
 
 # Der Spawnpunkt wird gesetzt.
 setworldspawn 0 49 0

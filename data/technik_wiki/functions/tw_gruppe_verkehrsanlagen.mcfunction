@@ -1,7 +1,7 @@
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Verkehrsanlagen"} run scoreboard players set @s TW 8000
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"8000"} run scoreboard players set @s TW 8000
-tellraw @s[scores={TW=8000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Verkehrsanlagen","color":"yellow","bold":true,"extra":[{"text":" (8000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Verkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Verkehrsanlagen"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=8000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Verkehrsanlagen","color":"yellow","bold":true,"extra":[{"text":" (8000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Verkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Verkehrsanlagen"} },{"text":"'","bold":true}]
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Sprintgang"} run scoreboard players set @s TW 8001
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"8001"} run scoreboard players set @s TW 8001

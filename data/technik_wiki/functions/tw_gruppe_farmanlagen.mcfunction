@@ -28,6 +28,11 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"7005"} run scoreboard 
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7005}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Kakaobohnenfarm","color":"yellow","bold":true,"extra":[{"text":" (7005)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Kakaobohnenfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Kakaobohnenfarm"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7005}] -4 27 259 0 0
 
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Moosfarm"} run scoreboard players set @s TW 7025
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"7025"} run scoreboard players set @s TW 7025
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7025}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Moosfarm","color":"yellow","bold":true,"extra":[{"text":" (7025)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Moosfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Moosfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7025}] -36 27 323 0 0
+
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Süßbeerenfarm"} run scoreboard players set @s TW 7006
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"7006"} run scoreboard players set @s TW 7006
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7006}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Süßbeerenfarm","color":"yellow","bold":true,"extra":[{"text":" (7006)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Süßbeerenfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Süßbeerenfarm"} },{"text":"'","bold":true}]
@@ -37,6 +42,16 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Leuchtbeerenfarm"} run
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"7023"} run scoreboard players set @s TW 7023
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7023}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Leuchtbeerenfarm","color":"yellow","bold":true,"extra":[{"text":" (7023)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Leuchtbeerenfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Leuchtbeerenfarm"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7023}] 92 27 355 0 0
+
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Tropfsteinfarm"} run scoreboard players set @s TW 7024
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"7024"} run scoreboard players set @s TW 7024
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7024}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Tropfsteinfarm","color":"yellow","bold":true,"extra":[{"text":" (7024)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Tropfsteinfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Tropfsteinfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7024}] -68 27 291 0 0
+
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Amethystfarm"} run scoreboard players set @s TW 7026
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"7026"} run scoreboard players set @s TW 7026
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7026}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Amethystfarm","color":"yellow","bold":true,"extra":[{"text":" (7026)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Amethystfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Amethystfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7026}] -68 27 323 0 0
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Kaktusfarm"} run scoreboard players set @s TW 7007
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"7007"} run scoreboard players set @s TW 7007
@@ -57,6 +72,11 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Honigfarm"} run scoreb
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"7018"} run scoreboard players set @s TW 7018
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7018}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Honigfarm","color":"yellow","bold":true,"extra":[{"text":" (7018)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Honigfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Honigfarm"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7018}] 60 27 355 0 0
+
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Tropfblattfarm"} run scoreboard players set @s TW 7027
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"7027"} run scoreboard players set @s TW 7027
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7027}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Tropfblattfarm","color":"yellow","bold":true,"extra":[{"text":" (7027)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Tropfblattfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Tropfblattfarm"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7027}] -36 27 355 0 0
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Meeresgurkenfarm"} run scoreboard players set @s TW 7010
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"7010"} run scoreboard players set @s TW 7010
@@ -98,6 +118,11 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"7014"} run scoreboard 
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7014}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Wassergenerator","color":"yellow","bold":true,"extra":[{"text":" (7014)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Wassergenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Wassergenerator"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7014}] -388 27 259 0 0
 
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Lavagenerator"} run scoreboard players set @s TW 7028
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"7028"} run scoreboard players set @s TW 7028
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7028}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Lavagenerator","color":"yellow","bold":true,"extra":[{"text":" (7028)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Lavagenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Lavagenerator"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=7028}] -420 27 323 0 0
+
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Eisgenerator"} run scoreboard players set @s TW 7015
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"7015"} run scoreboard players set @s TW 7015
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7015}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Eisgenerator","color":"yellow","bold":true,"extra":[{"text":" (7015)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Eisgenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Eisgenerator"} },{"text":"'","bold":true}]
@@ -117,11 +142,6 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Basaltgenerator"} run 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"7022"} run scoreboard players set @s TW 7022
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7022}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Basaltgenerator","color":"yellow","bold":true,"extra":[{"text":" (7022)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Basaltgenerator"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Basaltgenerator"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=7022}] -516 27 323 0 0
-
-execute if data storage technik_wiki:tw_daten {TW_Befehl:"Tropfsteinfarm"} run scoreboard players set @s TW 7024
-execute if data storage technik_wiki:tw_daten {TW_Befehl:"7024"} run scoreboard players set @s TW 7024
-tellraw @s[tag=!TW_Kein_Wiki,scores={TW=7024}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Tropfsteinfarm","color":"yellow","bold":true,"extra":[{"text":" (7024)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Tropfsteinfarm"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Tropfsteinfarm"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=7024}] -68 27 291 0 0
 
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Hühnerfarm"} run scoreboard players set @s TW 7101

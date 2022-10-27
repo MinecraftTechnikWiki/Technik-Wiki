@@ -1,7 +1,7 @@
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Straßenverkehrsanlagen"} run scoreboard players set @s TW 9000
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"9000"} run scoreboard players set @s TW 9000
-tellraw @s[scores={TW=9000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Straßenverkehrsanlagen","color":"yellow","bold":true,"extra":[{"text":" (9000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Straßenverkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Straßenverkehrsanlagen"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=9000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Straßenverkehrsanlagen","color":"yellow","bold":true,"extra":[{"text":" (9000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Straßenverkehrsanlagen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Straßenverkehrsanlagen"} },{"text":"'","bold":true}]
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Straßenbrücke und -tunnel"} run scoreboard players set @s TW 9001
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"9001"} run scoreboard players set @s TW 9001
@@ -31,14 +31,14 @@ teleport @s[scores={TW=9006}] 260 27 -581 180 0
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Automobil"} run scoreboard players set @s TW 9007
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"9007"} run scoreboard players set @s TW 9007
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=9007}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Automobil","color":"yellow","bold":true,"extra":[{"text":" (9007)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Automobil"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Automobil"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=9007}] 396 27 -580 180 0
+teleport @s[scores={TW=9007}] 388 27 -581 180 0
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Straßenbaumaschine"} run scoreboard players set @s TW 9008
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"9008"} run scoreboard players set @s TW 9008
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=9008}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Straßenbaumaschine","color":"yellow","bold":true,"extra":[{"text":" (9008)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Straßenbaumaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Straßenbaumaschine"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=9008}] 396 27 -637 180 0
+teleport @s[scores={TW=9008}] 420 27 -581 180 0
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Straßenbrücken- und -tunnelbaumaschine"} run scoreboard players set @s TW 9002
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"9002"} run scoreboard players set @s TW 9002
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=9002}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Straßenbrücken- und -tunnelbaumaschine","color":"yellow","bold":true,"extra":[{"text":" (9002)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Straßenbrücken- und -tunnelbaumaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Straßenbrücken-_und_-tunnelbaumaschine"} },{"text":"'","bold":true}]
-teleport @s[scores={TW=9002}] 419 27 -637 180 0
+teleport @s[scores={TW=9002}] 420 27 -645 180 0

@@ -7,7 +7,7 @@
 		},
 		"title":"Spielern kann geholfen werden!",
 		"frame":"goal",
-		"description":"Tippe im Befehlsbuch den Befehl /Hilfe ein."
+		"description":"Tippe im Befehlsbuch den Befehl Hilfe ein."
 	},
 	"parent":"technik_wiki:tw_befehlsbuch",
 	"criteria":

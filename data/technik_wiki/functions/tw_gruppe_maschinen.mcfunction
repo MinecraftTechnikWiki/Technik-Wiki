@@ -1,7 +1,7 @@
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Maschinen"} run scoreboard players set @s TW 12000
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"12000"} run scoreboard players set @s TW 12000
-tellraw @s[scores={TW=12000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Maschinen","color":"yellow","bold":true,"extra":[{"text":" (12000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Maschinen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Maschinen"} },{"text":"'","bold":true}]
+tellraw @s[scores={TW=12000}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Maschinen","color":"yellow","bold":true,"extra":[{"text":" (12000)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Maschinen"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Maschinen"} },{"text":"'","bold":true}]
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Systeme"} run scoreboard players set @s TW 13000
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"13000"} run scoreboard players set @s TW 13000
@@ -47,6 +47,11 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"12008"} run scoreboard
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12008}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Sortiermaschine","color":"yellow","bold":true,"extra":[{"text":" (12008)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Sortiermaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Sortiermaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12008}] 67 27 -260 180 0
 
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Verteilmaschine"} run scoreboard players set @s TW 12025
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"12025"} run scoreboard players set @s TW 12025
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12025}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Verteilmaschine","color":"yellow","bold":true,"extra":[{"text":" (12025)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Verteilmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Verteilmaschine"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12025}] 67 27 -324 180 0
+
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Lagermaschine"} run scoreboard players set @s TW 12009
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"12009"} run scoreboard players set @s TW 12009
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12009}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Lagermaschine","color":"yellow","bold":true,"extra":[{"text":" (12009)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Lagermaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Lagermaschine"} },{"text":"'","bold":true}]
@@ -56,6 +61,11 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Tauschmaschine"} run s
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"12010"} run scoreboard players set @s TW 12010
 tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12010}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Tauschmaschine","color":"yellow","bold":true,"extra":[{"text":" (12010)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Tauschmaschine"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Tauschmaschine"} },{"text":"'","bold":true}]
 teleport @s[scores={TW=12010}] 164 27 -261 180 0
+
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Handelshalle"} run scoreboard players set @s TW 12026
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"12026"} run scoreboard players set @s TW 12026
+tellraw @s[tag=!TW_Kein_Wiki,scores={TW=12026}] ["",{"translate":"Technik-Wiki-Artikel = ","color":"green","bold":true},{"text":"'","bold":true},{"text":"Handelshalle","color":"yellow","bold":true,"extra":[{"text":" (12026)"}],"hoverEvent":{"action":"show_text","contents":{"translate":"Handelshalle"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Handelshalle"} },{"text":"'","bold":true}]
+teleport @s[scores={TW=12026}] 131 27 -324 180 0
 
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Bankautomat"} run scoreboard players set @s TW 12011
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"12011"} run scoreboard players set @s TW 12011
