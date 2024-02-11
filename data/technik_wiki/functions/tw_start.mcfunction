@@ -5,7 +5,7 @@ execute store result storage technik_wiki:tw_daten TW_Ziele int 1 run function t
 execute store result score #TW_Ziele TW run data get storage technik_wiki:tw_daten TW_Ziele
 
 scoreboard players set #TW_Start TW 0
-scoreboard players set #TW_Version TW 18
+scoreboard players set #TW_Version TW 19
 
 # Welten: 1 Redstone, 2 Schiene, 3 Mechanik
 scoreboard players set #TW_Welt TW 0

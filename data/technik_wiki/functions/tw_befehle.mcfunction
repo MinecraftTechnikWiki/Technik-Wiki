@@ -6,6 +6,8 @@ execute at @s as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer =
 
 execute store result score #TW_Anzahl TW run data get entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Befehle
 
+execute as @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] run data modify entity @s data.TW_Verlauf append from entity @s data.TW_Befehle[]
+
 function technik_wiki:tw_befehle_eingabe
 
 data modify storage technik_wiki:tw_daten TW_Befehl set value ""

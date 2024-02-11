@@ -13,8 +13,9 @@ scoreboard players set @a[scores={TW_Drop=1..,TW=1}] TW_Drop 0
 gamemode adventure @a[distance=..99,x=0,y=49,z=0,gamemode=!adventure,tag=!TW_Erweitert]
 
 # Knopf auf Boden
-execute as @a at @s store success score @s TW_Test run fill ~2 ~ ~2 ~-2 ~ ~-2 minecraft:oak_button[face=floor,powered=false] replace minecraft:oak_button[face=floor,powered=true]
-execute as @a[scores={TW_Test=1}] at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append value "Startpunkt"
+execute as @a[advancements={technik_wiki:tw_knopf=true}] at @s store success score @s TW_Test run fill ~2 ~ ~2 ~-2 ~ ~-2 minecraft:oak_button[face=floor,powered=false] replace minecraft:oak_button[face=floor,powered=true]
+execute as @a[advancements={technik_wiki:tw_knopf=true},scores={TW_Test=1}] at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append value "Startpunkt"
+advancement revoke @a[advancements={technik_wiki:tw_knopf=true}] only technik_wiki:tw_knopf
 
 # TNT
 execute at @a[tag=TW_Erweitert,gamemode=!spectator] run tag @e[distance=..50,type=minecraft:tnt] add TW_TNT

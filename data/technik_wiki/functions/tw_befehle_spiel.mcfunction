@@ -32,9 +32,7 @@ tag @s[scores={TW=20003},tag=TW_Erweitert] remove TW_Erweitert
 tellraw @s[scores={TW=2}] ["",{"text":"Version v","color":"gray","bold":true},{"text":" -- Zeigt die Welt-Version an, in der man sich befindet."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Version"} run scoreboard players set @s TW 20004
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"v"} run scoreboard players set @s TW 20004
-execute if score #TW_Welt TW matches 1 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Redstone-Welt "},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
-execute if score #TW_Welt TW matches 2 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Schienen-Welt "},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
-execute if score #TW_Welt TW matches 3 run tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Mechanik-Welt "},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
+tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"storage":"technik_wiki:tw_daten","nbt":"TW_Welt","interpret":true},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Begrüßung bg","color":"gray","bold":true},{"text":" -- Man sieht eine Titelnachricht und eine Rakete."}]
@@ -42,7 +40,6 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Begrüßung"} run scor
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"bg"} run scoreboard players set @s TW 20005
 title @s[scores={TW=20005}] title ["",{"text":"Willkommen!","color":"gold","bold":true}]
 title @s[scores={TW=20005}] subtitle ["",{"text":"auf der ","color":"white","bold":true,"underlined":true},{"storage":"technik_wiki:tw_daten","nbt":"TW_Welt","interpret":true,"underlined":true}]
-
 execute at @s[scores={TW=20005}] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,CustomNameVisible:true,CustomName:'{"text":"Willkommen!","color":"gold","bold":true}',FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Flicker:true,Trail:true,Colors:[I;16711680,16776960,255,65280],FadeColors:[I;255,65280,16711680,16776960]}]} } } }
 
 
@@ -61,19 +58,19 @@ gamemode adventure @s[scores={TW=20007},gamemode=!adventure]
 tellraw @s[scores={TW=2}] ["",{"text":"Redstone-Welt rw","color":"gray","bold":true},{"text":" -- Downloadhinweis für die Redstone-Welt."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Redstone-Welt"} run scoreboard players set @s TW 20008
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"rw"} run scoreboard players set @s TW 20008
-tellraw @s[scores={TW=20008}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Redstone-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Redstone-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
+tellraw @s[scores={TW=20008}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Redstone-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Redstone-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Schienen-Welt sw","color":"gray","bold":true},{"text":" -- Downloadhinweis für die Schienen-Welt."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Schienen-Welt"} run scoreboard players set @s TW 20009
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"sw"} run scoreboard players set @s TW 20009
-tellraw @s[scores={TW=20009}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Schienen-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Schienen-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
+tellraw @s[scores={TW=20009}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Schienen-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Schienen-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Mechanik-Welt mw","color":"gray","bold":true},{"text":" -- Downloadhinweis für die Mechanik-Welt."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Mechanik-Welt"} run scoreboard players set @s TW 20010
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"mw"} run scoreboard players set @s TW 20010
-tellraw @s[scores={TW=20010}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Mechanik-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Mechanik-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
+tellraw @s[scores={TW=20010}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Mechanik-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Mechanik-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"!Hinweis !hs !info","color":"gray","bold":true},{"text":" -- Schaltet Downloadhinweis aus."}]
@@ -220,3 +217,22 @@ execute if entity @s[scores={TW=20027},tag=TW_Wurf] run data modify storage tech
 execute if entity @s[scores={TW=20027},tag=!TW_Wurf] run data modify storage technik_wiki:tw_daten TW_Bool set value '{"text":"falsch","color":"red","bold":true}'
 
 tellraw @s[scores={TW=20027}] ["",{"text":"Wurf == ","color":"gold"},{"storage":"technik_wiki:tw_daten","nbt":"TW_Bool","interpret":true}]
+
+tellraw @s[scores={TW=2}] ["",{"text":"Verlauf history","color":"gray","bold":true},{"text":" -- Der Verlauf der Befehle die eingetippt wurden."}]
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Verlauf"} run scoreboard players set @s TW 20028
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"history"} run scoreboard players set @s TW 20028
+
+execute if entity @s[scores={TW=20028}] run say @e[type=minecraft:marker,tag=TW_Eingabe,limit=1]
+
+execute if entity @s[scores={TW=20028}] run data modify storage technik_wiki:tw_daten TW_Verlauf set from entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Verlauf
+execute if entity @s[scores={TW=20028}] store result score #TW_Verlauf TW run data get storage technik_wiki:tw_daten TW_Verlauf
+execute if entity @s[scores={TW=20028}] run function technik_wiki:tw_befehle_verlauf
+
+tellraw @s[scores={TW=2}] ["",{"text":"!Verlauf !history","color":"gray","bold":true},{"text":" -- Löscht den Verlauf der Befehle die eingetippt wurden."}]
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"!Verlauf"} run scoreboard players set @s TW 20028
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"!history"} run scoreboard players set @s TW 20028
+
+execute if entity @s[scores={TW=20028}] run say @e[type=minecraft:marker,tag=TW_Eingabe,limit=1]
+
+execute if entity @s[scores={TW=20028}] run data remove entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Verlauf
+tellraw @s[scores={TW=20028}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Hilfe","interpret":true},{"text":"Der Verlauf der eingetippten Befehle wurde entfernt.","color":"yellow"}]

@@ -160,17 +160,19 @@ tellraw @s[scores={TW=30021}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_E
 tellraw @s[scores={TW=2}] ["",{"text":"Plattform pt pt#2","color":"gray","bold":true},{"text":" -- Teleporter-Plattform die bei Techniken steht, wird platziert."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Plattform"} run scoreboard players set @s TW 30022
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"pt"} run scoreboard players set @s TW 30022
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"pt#2"} run scoreboard players set @s TW 30022
 
 execute as @s[y_rotation=-45..45,scores={TW=30022}] at @s rotated 90 0 align xyz run setblock ^3 ^ ^ minecraft:structure_block{mode:"LOAD",ignoreEntities:false,rotation:"CLOCKWISE_90",posX:2,posY:0,posZ:-2,name:"technik_wiki:tw_plattform_klein"} keep
 execute as @s[y_rotation=45..135,scores={TW=30022}] at @s rotated 180 0 align xyz run setblock ^3 ^ ^ minecraft:structure_block{mode:"LOAD",ignoreEntities:false,rotation:"CLOCKWISE_180",posX:2,posY:0,posZ:2,name:"technik_wiki:tw_plattform_klein"} keep
 execute as @s[y_rotation=135..-135,scores={TW=30022}] at @s rotated 270 0 align xyz run setblock ^3 ^ ^ minecraft:structure_block{mode:"LOAD",ignoreEntities:false,rotation:"COUNTERCLOCKWISE_90",posX:-2,posY:0,posZ:2,name:"technik_wiki:tw_plattform_klein"} keep
 execute as @s[y_rotation=-135..-45,scores={TW=30022}] at @s rotated 0 0 align xyz run setblock ^3 ^ ^ minecraft:structure_block{mode:"LOAD",ignoreEntities:false,rotation:"NONE",posX:-2,posY:0,posZ:-2,name:"technik_wiki:tw_plattform_klein"} keep
 
-execute if data storage technik_wiki:tw_daten {TW_Befehl:"pt#2"} run scoreboard players set @s TW 30022
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"pt"} run scoreboard players set @s TW -30022
 execute as @s[y_rotation=-45..45,scores={TW=30022}] if data storage technik_wiki:tw_daten {TW_Befehl:"pt#2"} at @s rotated 90 0 align xyz run data merge block ^3 ^ ^ {posX:4,posZ:-2,name:"technik_wiki:tw_plattform"}
 execute as @s[y_rotation=45..135,scores={TW=30022}] if data storage technik_wiki:tw_daten {TW_Befehl:"pt#2"} at @s rotated 180 0 align xyz run data merge block ^3 ^ ^ {posX:2,posZ:4,name:"technik_wiki:tw_plattform"}
 execute as @s[y_rotation=135..-135,scores={TW=30022}] if data storage technik_wiki:tw_daten {TW_Befehl:"pt#2"} at @s rotated 270 0 align xyz run data merge block ^3 ^ ^ {posX:-4,posZ:2,name:"technik_wiki:tw_plattform"}
 execute as @s[y_rotation=-135..-45,scores={TW=30022}] if data storage technik_wiki:tw_daten {TW_Befehl:"pt#2"} at @s rotated 0 0 align xyz run data merge block ^3 ^ ^ {posX:-2,posZ:-4,name:"technik_wiki:tw_plattform"}
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"pt"} run scoreboard players set @s TW 30022
 
 execute as @s[scores={TW=30022}] at @s rotated ~90 0 align xyz run fill ^2 ^ ^-1 ^4 ^ ^1 minecraft:redstone_block replace minecraft:air
 

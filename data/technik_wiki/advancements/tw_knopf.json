@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "player": [],
+                "location": {
+                    "block": {
+                        "id": "minecraft:oak_button"
+                    }
+                }
+            }
+        }
+    }
+}
