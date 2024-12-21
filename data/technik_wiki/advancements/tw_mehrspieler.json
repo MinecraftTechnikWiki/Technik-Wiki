@@ -3,7 +3,7 @@
 	{
 		"icon":
 		{
-			"item":"minecraft:player_head"
+			"id":"minecraft:player_head"
 		},
 		"title":"Spiele mit Freunden",
 		"frame":"challenge",
@@ -12,7 +12,7 @@
 	"parent":"technik_wiki:tw_technik_wiki",
 	"criteria":
 	{
-		"Kriterium":
+		"Befehl":
 		{
 			"trigger":"minecraft:impossible"
 		}

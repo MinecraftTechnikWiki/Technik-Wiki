@@ -1,13 +1,16 @@
+# Abbrauch, falls kein Spieler vorhanden
+execute unless entity @p run return 0
+
 # Befehlsbuch verwenden
-tag @a[nbt={SelectedItem:{tag:{TW_Befehlsbuch:true} } }] add TW_Befehlsbuch
-execute as @a[tag=TW_Befehlsbuch] if data entity @s SelectedItem.tag.pages at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append from entity @p SelectedItem.tag.pages[]
+execute as @a if items entity @s weapon.* *[minecraft:custom_data~{TW_Befehlsbuch:true}] run tag @s add TW_Befehlsbuch
+execute as @a[tag=TW_Befehlsbuch] if data entity @s SelectedItem.components."minecraft:writable_book_content".pages at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append from entity @p SelectedItem.components."minecraft:writable_book_content".pages[].raw
 execute as @a[scores={TW=1..}] run function technik_wiki:tw_befehle
 tag @a[tag=TW_Befehlsbuch] remove TW_Befehlsbuch
 
 # Buch auf den Boden werfen und zum Startpunkt teleportiert werden
-execute as @a[scores={TW_Drop=1..}] at @s if entity @e[distance=..3,type=minecraft:item,nbt={Item:{id:"minecraft:writable_book",tag:{TW_Befehlsbuch:true} } }] store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append value "Startpunkt"
-execute at @a[scores={TW_Drop=1..}] run kill @e[distance=..3,type=minecraft:item,nbt={Item:{id:"minecraft:writable_book",tag:{TW_Befehlsbuch:true} } }]
-scoreboard players set @a[scores={TW_Drop=1..,TW=1}] TW_Drop 0
+execute as @a[scores={TW_Drop=1..}] at @s if items entity @e[distance=..3,type=minecraft:item] contents minecraft:writable_book[minecraft:custom_data~{TW_Befehlsbuch:true}] store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append value "Startpunkt"
+execute as @a[scores={TW_Drop=1..}] at @s store result score @s TW_Test run kill @e[distance=..3,type=minecraft:item,nbt={Item:{id:"minecraft:writable_book",components:{"minecraft:custom_data":{TW_Befehlsbuch:true} } } }]
+scoreboard players set @a[scores={TW_Drop=1..,TW_Test=1}] TW_Drop 0
 
 # Abenteuer am Spawn
 gamemode adventure @a[distance=..99,x=0,y=49,z=0,gamemode=!adventure,tag=!TW_Erweitert]
@@ -39,3 +42,6 @@ execute as @e[type=minecraft:item,tag=TW_Zentrierung,nbt={OnGround:true}] run da
 execute at @a[tag=TW_Drop,scores={TW_Drop=1..}] run kill @e[distance=..1,type=minecraft:item,tag=TW_Symbol,sort=nearest,limit=1]
 execute at @a[tag=TW_Drop,scores={TW_Drop=1..}] run data merge entity @e[distance=..3,type=minecraft:item,sort=nearest,limit=1] {Tags:["TW_Symbol","TW_Entfernen","TW_Zentrierung"],Age:-32768s,PickupDelay:32767s}
 scoreboard players set @a[tag=TW_Drop,scores={TW_Drop=1..}] TW_Drop 0
+
+# Statistik rücksetzen
+scoreboard players set @a[scores={TW_Drop=1..}] TW_Drop 0

@@ -12,6 +12,7 @@
     "minecraft:hopper",
     "minecraft:hopper_minecart",
     "minecraft:creeper_spawn_egg",
-    "minecraft:enderman_spawn_egg"
+    "minecraft:enderman_spawn_egg",
+    "minecraft:respawn_anchor"
   ]
 }

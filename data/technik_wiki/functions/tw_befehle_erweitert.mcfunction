@@ -2,7 +2,7 @@
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Hilfe"} run scoreboard players set @s TW 2
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"h"} run scoreboard players set @s TW 2
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"help"} run scoreboard players set @s TW 2
-tellraw @s[scores={TW=2}] ["",{"text":"\n--- ","color":"dark_green"},{"translate":"Befehlsbuch-Hilfeseite","color":"dark_green"},{"text":" (Erweitert) ---\n\n","color":"dark_green"}]
+tellraw @s[scores={TW=2}] ["",{"text":"--- ","color":"dark_green"},{"translate":"Befehlsbuch-Hilfeseite","color":"dark_green"},{"text":" (Erweitert) ---\n\n","color":"dark_green"}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Zeitraffer zr","color":"gray","bold":true},{"text":" -- Spielgeschwindigkeit wird erhöht."}]
@@ -84,7 +84,7 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Engel"} run scoreboard
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"el"} run scoreboard players set @s TW 30011
 execute if entity @s[scores={TW=30011},tag=!TW_Engel] store success score @s TW_Test run tag @s add TW_Engel
 tellraw @s[scores={TW=30011,TW_Test=1},tag=TW_Engel] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Erweitert","interpret":true},{"text":"Du besitzt nun die Engelsflügel.","color":"green"}]
-clear @s[scores={TW=30011,TW_Test=0},tag=TW_Engel] minecraft:elytra{TW_Elytren:true}
+clear @s[scores={TW=30011,TW_Test=0},tag=TW_Engel] minecraft:elytra[minecraft:custom_data={TW_Elytren:true}]
 tellraw @s[scores={TW=30011,TW_Test=0},tag=TW_Engel] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Erweitert","interpret":true},{"text":"Die Engelsflügel wurden entfernt.","color":"yellow"}]
 tag @s[scores={TW=30011,TW_Test=0},tag=TW_Engel] remove TW_Engel
 
@@ -114,22 +114,22 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Nachtsicht"} run score
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"nt"} run scoreboard players set @s TW 30015
 tellraw @s[scores={TW=30015},tag=!TW_Nachtsicht] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Erweitert","interpret":true},{"text":"Die permanente Nachtsicht wurde aktiviert."}]
 tag @s[scores={TW=30015},tag=!TW_Nachtsicht] add TW_Nachtsicht
-effect give @s[scores={TW=30015}] minecraft:night_vision 600 255 true
+effect give @s[scores={TW=30015}] minecraft:night_vision infinite 255 true
 
 tellraw @s[scores={TW=2}] ["",{"text":"Befehle be","color":"gray","bold":true},{"text":" -- Man erhält diverse Befehlsblöcke."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Befehle"} run scoreboard players set @s TW 30016
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"be"} run scoreboard players set @s TW 30016
-execute if entity @s[scores={TW=30016}] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:command_block",Count:1b},Passengers:[{id:"minecraft:item",Item:{id:"minecraft:repeating_command_block",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:chain_command_block",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:structure_block",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:structure_void",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:barrier",Count:1b} } ] }
+execute if entity @s[scores={TW=30016}] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:command_block",count:1},Passengers:[{id:"minecraft:item",Item:{id:"minecraft:repeating_command_block",count:1} },{id:"minecraft:item",Item:{id:"minecraft:chain_command_block",count:1} },{id:"minecraft:item",Item:{id:"minecraft:structure_block",count:1} },{id:"minecraft:item",Item:{id:"minecraft:structure_void",count:1} },{id:"minecraft:item",Item:{id:"minecraft:barrier",count:1} } ] }
 
 tellraw @s[scores={TW=2}] ["",{"text":"Redstone re","color":"gray","bold":true},{"text":" -- Man erhält diverse Redstone-Elemente."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Redstone"} run scoreboard players set @s TW 30017
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"re"} run scoreboard players set @s TW 30017
-execute if entity @s[scores={TW=30017}] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:redstone",Count:1b},Passengers:[{id:"minecraft:item",Item:{id:"minecraft:repeater",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:comparator",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:redstone_torch",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:gold_block",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:iron_block",Count:1b} } ] }
+execute if entity @s[scores={TW=30017}] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:redstone",count:1},Passengers:[{id:"minecraft:item",Item:{id:"minecraft:repeater",count:1} },{id:"minecraft:item",Item:{id:"minecraft:comparator",count:1} },{id:"minecraft:item",Item:{id:"minecraft:redstone_torch",count:1} },{id:"minecraft:item",Item:{id:"minecraft:gold_block",count:1} },{id:"minecraft:item",Item:{id:"minecraft:iron_block",count:1} } ] }
 
 tellraw @s[scores={TW=2}] ["",{"text":"Schiene sn","color":"gray","bold":true},{"text":" -- Man erhält diverse Schienen-Elemente."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Schiene"} run scoreboard players set @s TW 30018
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"sn"} run scoreboard players set @s TW 30018
-execute if entity @s[scores={TW=30018}] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:rail",Count:1b},Passengers:[{id:"minecraft:item",Item:{id:"minecraft:powered_rail",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:detector_rail",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:activator_rail",Count:1b} },{id:"minecraft:item",Item:{id:"minecraft:stone",Count:1b,Damage:5} },{id:"minecraft:item",Item:{id:"minecraft:coal_block",Count:1b} } ] }
+execute if entity @s[scores={TW=30018}] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:rail",count:1},Passengers:[{id:"minecraft:item",Item:{id:"minecraft:powered_rail",count:1} },{id:"minecraft:item",Item:{id:"minecraft:detector_rail",count:1} },{id:"minecraft:item",Item:{id:"minecraft:activator_rail",count:1} },{id:"minecraft:item",Item:{id:"minecraft:andesite",count:1} },{id:"minecraft:item",Item:{id:"minecraft:coal_block",count:1} } ] }
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Drop dp","color":"gray","bold":true},{"text":" -- Blöcke und Kreaturen droppen Gegenstände."}]

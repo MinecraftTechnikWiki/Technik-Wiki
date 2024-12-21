@@ -3,7 +3,7 @@
 	{
 		"icon":
 		{
-			"item":"minecraft:sticky_piston"
+			"id":"minecraft:sticky_piston"
 		},
 		"title":
 		{
@@ -22,7 +22,7 @@
 	},
 	"criteria":
 	{
-		"Kriterium":
+		"Befehl":
 		{
 			"trigger":"minecraft:impossible"
 		}

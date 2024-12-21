@@ -3,7 +3,7 @@
 	{
 		"icon":
 		{
-			"item":"minecraft:writable_book"
+			"id":"minecraft:writable_book"
 		},
 		"title":"Das Buch der Befehle",
 		"frame":"task",

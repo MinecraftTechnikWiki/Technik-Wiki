@@ -12,8 +12,11 @@ tellraw @s[scores={TW=2}] ["",{"text":"Startpunkt sr spawn","color":"gray","bold
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Startpunkt"} run scoreboard players set @s TW 20001
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"sr"} run scoreboard players set @s TW 20001
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"spawn"} run scoreboard players set @s TW 20001
-teleport @s[scores={TW=20001}] 0 49 0
 
+execute if score #TW_Server TW matches 0 run teleport @s[scores={TW=20001}] 0 49 0
+$execute if score #TW_Server TW matches 1 at @s[scores={TW=20001}] if dimension technik_wiki:$(Welt1) in technik_wiki:$(Welt1) run teleport @s 0 49 0
+$execute if score #TW_Server TW matches 1 at @s[scores={TW=20001}] if dimension technik_wiki:$(Welt2) in technik_wiki:$(Welt2) run teleport @s 0 49 0
+$execute if score #TW_Server TW matches 1 at @s[scores={TW=20001}] if dimension technik_wiki:$(Welt3) in technik_wiki:$(Welt3) run teleport @s 0 49 0
 
 tellraw @s[scores={TW=2}] ["",{"text":"Erweitert ew","color":"gray","bold":true},{"text":" -- Man erhält als Operator erweiterte Rechte."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Erweitert"} run scoreboard players set @s TW 20002
@@ -29,18 +32,27 @@ tellraw @s[scores={TW=20003},tag=TW_Erweitert] ["",{"storage":"technik_wiki:tw_d
 tag @s[scores={TW=20003},tag=TW_Erweitert] remove TW_Erweitert
 
 
+execute if score #TW_Server TW matches 1 at @s if dimension technik_wiki:redstone_welt run scoreboard players set #TW_Welt TW 1
+execute if score #TW_Server TW matches 1 at @s if dimension technik_wiki:schienen_welt run scoreboard players set #TW_Welt TW 2
+execute if score #TW_Server TW matches 1 at @s if dimension technik_wiki:mechanik_welt run scoreboard players set #TW_Welt TW 3
+
+execute if score #TW_Welt TW matches 1 run data modify storage technik_wiki:tw_daten TW_Welt_Info set value '{"text":"Redstone-Welt","color":"dark_red","bold":true}'
+execute if score #TW_Welt TW matches 2 run data modify storage technik_wiki:tw_daten TW_Welt_Info set value '{"text":"Schienen-Welt","color":"dark_green","bold":true}'
+execute if score #TW_Welt TW matches 3 run data modify storage technik_wiki:tw_daten TW_Welt_Info set value '{"text":"Mechanik-Welt","color":"dark_blue","bold":true}'
+
 tellraw @s[scores={TW=2}] ["",{"text":"Version v","color":"gray","bold":true},{"text":" -- Zeigt die Welt-Version an, in der man sich befindet."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Version"} run scoreboard players set @s TW 20004
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"v"} run scoreboard players set @s TW 20004
-tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"storage":"technik_wiki:tw_daten","nbt":"TW_Welt","interpret":true},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
+tellraw @s[scores={TW=20004}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"storage":"technik_wiki:tw_daten","nbt":"TW_Welt_Info","interpret":true},{"text":" 1.","bold":true},{"score":{"name":"#TW_Version","objective":"TW"},"bold":true},{"text":"a","bold":true}]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Begrüßung bg","color":"gray","bold":true},{"text":" -- Man sieht eine Titelnachricht und eine Rakete."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Begrüßung"} run scoreboard players set @s TW 20005
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"bg"} run scoreboard players set @s TW 20005
 title @s[scores={TW=20005}] title ["",{"text":"Willkommen!","color":"gold","bold":true}]
-title @s[scores={TW=20005}] subtitle ["",{"text":"auf der ","color":"white","bold":true,"underlined":true},{"storage":"technik_wiki:tw_daten","nbt":"TW_Welt","interpret":true,"underlined":true}]
-execute at @s[scores={TW=20005}] run summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,CustomNameVisible:true,CustomName:'{"text":"Willkommen!","color":"gold","bold":true}',FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Flicker:true,Trail:true,Colors:[I;16711680,16776960,255,65280],FadeColors:[I;255,65280,16711680,16776960]}]} } } }
+title @s[scores={TW=20005}] subtitle ["",{"text":"auf der ","color":"white","bold":true,"underlined":true},{"storage":"technik_wiki:tw_daten","nbt":"TW_Welt_Info","interpret":true,"underlined":true}]
+
+execute at @s[scores={TW=20005}] run summon minecraft:firework_rocket ~ ~1 ~ {CustomName:'{"text":"Willkommen!","color":"gold","bold":true}',CustomNameVisible:true,FireworksItem:{components:{"minecraft:fireworks":{explosions:[{colors:[I;16711680,16776960,255,65280],fade_colors:[I;255,65280,16711680,16776960],has_trail:true,has_twinkle:true,shape:"large_ball"}],flight_duration:0b} },count:1,id:"minecraft:firework_rocket"},LifeTime:20}
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Kreativ k","color":"gray","bold":true},{"text":" -- Spielmodus: Kreativ"}]
@@ -52,6 +64,7 @@ gamemode creative @s[scores={TW=20006},gamemode=!creative]
 tellraw @s[scores={TW=2}] ["",{"text":"Abenteuer a","color":"gray","bold":true},{"text":" -- Spielmodus: Abenteuer"}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Abenteuer"} run scoreboard players set @s TW 20007
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"a"} run scoreboard players set @s TW 20007
+effect give @a[scores={TW=20007},gamemode=!adventure] minecraft:saturation infinite 255 true
 gamemode adventure @s[scores={TW=20007},gamemode=!adventure]
 
 
@@ -59,19 +72,19 @@ tellraw @s[scores={TW=2}] ["",{"text":"Redstone-Welt rw","color":"gray","bold":t
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Redstone-Welt"} run scoreboard players set @s TW 20008
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"rw"} run scoreboard players set @s TW 20008
 tellraw @s[scores={TW=20008}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Redstone-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Redstone-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
-
+$execute if score #TW_Server TW matches 1 at @s[scores={TW=20008}] in technik_wiki:$(Welt1) run teleport @s ~ ~ ~
 
 tellraw @s[scores={TW=2}] ["",{"text":"Schienen-Welt sw","color":"gray","bold":true},{"text":" -- Downloadhinweis für die Schienen-Welt."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Schienen-Welt"} run scoreboard players set @s TW 20009
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"sw"} run scoreboard players set @s TW 20009
 tellraw @s[scores={TW=20009}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Schienen-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Schienen-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
-
+$execute if score #TW_Server TW matches 1 at @s[scores={TW=20009}] in technik_wiki:$(Welt2) run teleport @s ~ ~ ~
 
 tellraw @s[scores={TW=2}] ["",{"text":"Mechanik-Welt mw","color":"gray","bold":true},{"text":" -- Downloadhinweis für die Mechanik-Welt."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Mechanik-Welt"} run scoreboard players set @s TW 20010
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"mw"} run scoreboard players set @s TW 20010
 tellraw @s[scores={TW=20010}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"text":"Diese Welt kann im Minecraft-Technik-Wiki unter ","color":"green","bold":true},{"text":"'","color":"white","bold":true},{"text":"Mechanik-Welt","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Mechanik-Welt"} },{"text":"'","color":"white","bold":true},{"text":" heruntergeladen werden.","color":"green","bold":true}]
-
+$execute if score #TW_Server TW matches 1 at @s[scores={TW=20010}] in technik_wiki:$(Welt3) run teleport @s ~ ~ ~
 
 tellraw @s[scores={TW=2}] ["",{"text":"!Hinweis !hs !info","color":"gray","bold":true},{"text":" -- Schaltet Downloadhinweis aus."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"!Hinweis"} run scoreboard players set @s TW 20011
@@ -87,7 +100,7 @@ execute if data storage technik_wiki:tw_daten {TW_Befehl:"Hinweis"} run scoreboa
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"hs"} run scoreboard players set @s TW 20012
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"info"} run scoreboard players set @s TW 20012
 tellraw @s[scores={TW=20012},tag=!TW_Kein_Hinweis] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Hilfe","interpret":true},{"text":"Es ist bereits umgestellt auf Downloadbenachrichtigung.","color":"red"}]
-item replace entity @s[scores={TW=20012},tag=TW_Kein_Hinweis] hotbar.8 with minecraft:writable_book{TW_Befehlsbuch:true,pages:["Startzeit"],display:{Name:'{"translate":"Befehlsbuch","color":"light_purple","italic":false}'} }
+item replace entity @s[scores={TW=20012},tag=TW_Kein_Hinweis] hotbar.8 with minecraft:writable_book[minecraft:custom_name='{"translate":"Befehlsbuch","color":"light_purple","italic":false}',minecraft:writable_book_content={pages:[{raw:"Startzeit"}]},minecraft:custom_data={TW_Befehlsbuch:true}]
 tellraw @s[scores={TW=20012},tag=TW_Kein_Hinweis] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Hilfe","interpret":true},{"text":"Umgestellt auf zirkulierende Downloadbenachrichtigung.","color":"green"}]
 tag @s[scores={TW=20012},tag=TW_Kein_Hinweis] remove TW_Kein_Hinweis
 
@@ -181,13 +194,7 @@ scoreboard players set @s[scores={TW=20023}] TW_Zeit 0
 tellraw @s[scores={TW=2}] ["",{"text":"Fehler err","color":"gray","bold":true},{"text":" -- Gibt Hinweis auf Wiki-Seite, wo ein Fehler dieser Welt gemeldet werden kann"}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Fehler"} run scoreboard players set @s TW 20024
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"err"} run scoreboard players set @s TW 20024
-tellraw @s[scores={TW=20024}] [{"text":" Melde Fehler im Technik-Wiki: ","color":"green"},{"text":"'Gemeinschaftsportal'","color":"yellow","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Minecraft_Wiki_Diskussion:Gemeinschaftsportal"} },"\n",{"text":" Melde Fehler im Forum: ","color":"green"},{"text":"'Unlimitedworld'","color":"yellow","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://uwmc.de/p9691"} }]
-
-
-tellraw @s[scores={TW=2}] ["",{"text":"Helfer hr","color":"gray","bold":true},{"text":" -- Zeigt alle Helfer für die Welt an."}]
-execute if data storage technik_wiki:tw_daten {TW_Befehl:"Helfer"} run scoreboard players set @s TW 20025
-execute if data storage technik_wiki:tw_daten {TW_Befehl:"hr"} run scoreboard players set @s TW 20025
-tellraw @s[scores={TW=20025}] [{"text":"Die Helfer von Nethonos: ","color":"dark_green"},"\n",{"text":"-","color":"white"},{"text":"RikuShadowclaw","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:RikuShadowclaw"} },{"text":"         -","color":"white"},{"text":"Markus_Rost","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:MarkusRost"} },"\n",{"text":"-","color":"white"},{"text":"_Gusion_","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:OriginalGusion"} },{"text":"                 -","color":"white"},{"text":"fscript","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Fscript"} },"\n",{"text":"-","color":"white"},{"text":"Gelbstern","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Gelbstern"} },{"text":"                -","color":"white"},{"text":"Alcatraz997","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Alcatraz997"} },"\n",{"text":"-","color":"white"},{"text":"Gr4phene","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Gr4phene"} },{"text":"                -","color":"white"},{"text":"piegames","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Piegames"} },"\n",{"text":"-","color":"white"},{"text":"Zaibod","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Zaibod"} },{"text":"                    -","color":"white"},{"text":"Morock","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Bodenseepirat"} },"\n",{"text":"-","color":"white"},{"text":"Tenebra99","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzerin:Tenebra99"} },{"text":"              -","color":"white"},{"text":"Nieke","color":"gold","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Benutzer:Nike020410"} }]
+tellraw @s[scores={TW=20024}] [{"text":" Melde Fehler im ","color":"green"},{"text":"'Technik-Wiki'","color":"yellow","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://de.minecraft.wiki/w/Technik:Technik_Wiki"} },"\n",{"text":" Melde Fehler im ","color":"green"},{"text":"'Wiki-Discord'","color":"yellow","hoverEvent":{"action":"show_text","contents":{"translate":"Klick mich!"} },"clickEvent":{"action":"open_url","value":"https://discord.com/invite/F75vfpd"} }]
 
 
 tellraw @s[scores={TW=2}] ["",{"text":"Hoch ho","color":"gray","bold":true},{"text":" -- Man erklimmt das Dach (Erweitert: und man erhält eine Rakete)."}]
@@ -221,18 +228,25 @@ tellraw @s[scores={TW=20027}] ["",{"text":"Wurf == ","color":"gold"},{"storage":
 tellraw @s[scores={TW=2}] ["",{"text":"Verlauf history","color":"gray","bold":true},{"text":" -- Der Verlauf der Befehle die eingetippt wurden."}]
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"Verlauf"} run scoreboard players set @s TW 20028
 execute if data storage technik_wiki:tw_daten {TW_Befehl:"history"} run scoreboard players set @s TW 20028
-
-execute if entity @s[scores={TW=20028}] run say @e[type=minecraft:marker,tag=TW_Eingabe,limit=1]
-
 execute if entity @s[scores={TW=20028}] run data modify storage technik_wiki:tw_daten TW_Verlauf set from entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Verlauf
 execute if entity @s[scores={TW=20028}] store result score #TW_Verlauf TW run data get storage technik_wiki:tw_daten TW_Verlauf
 execute if entity @s[scores={TW=20028}] run function technik_wiki:tw_befehle_verlauf
 
-tellraw @s[scores={TW=2}] ["",{"text":"!Verlauf !history","color":"gray","bold":true},{"text":" -- Löscht den Verlauf der Befehle die eingetippt wurden."}]
-execute if data storage technik_wiki:tw_daten {TW_Befehl:"!Verlauf"} run scoreboard players set @s TW 20028
-execute if data storage technik_wiki:tw_daten {TW_Befehl:"!history"} run scoreboard players set @s TW 20028
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"!Verlauf"} run scoreboard players set @s TW 20029
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"!history"} run scoreboard players set @s TW 20029
+execute if entity @s[scores={TW=20029}] run data remove entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Verlauf
+tellraw @s[scores={TW=20029}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Hilfe","interpret":true},{"text":"Der Verlauf der eingetippten Befehle wurde entfernt.","color":"yellow"}]
 
-execute if entity @s[scores={TW=20028}] run say @e[type=minecraft:marker,tag=TW_Eingabe,limit=1]
+tellraw @s[scores={TW=2}] ["",{"text":"Weltpunkt warppoint","color":"gray","bold":true},{"text":" -- Weltpunkt setzen."}]
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Weltpunkt"} run scoreboard players set @s TW 20030
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"warppoint"} run scoreboard players set @s TW 20030
+execute if entity @s[scores={TW=20030}] store result entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Weltpunkt.X int 1 run data get entity @s Pos[0]
+execute if entity @s[scores={TW=20030}] store result entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Weltpunkt.Y int 1 run data get entity @s Pos[1]
+execute if entity @s[scores={TW=20030}] store result entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Weltpunkt.Z int 1 run data get entity @s Pos[2]
+execute if entity @s[scores={TW=20030}] run data modify entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Weltpunkt.Welt set from entity @s Dimension
+tellraw @s[scores={TW=20030}] ["",{"text":"Weltpunkt gesetzt: ","color":"gray","bold":true},{"entity":"@e[type=minecraft:marker,tag=TW_Eingabe,limit=1]","nbt":"data.\"TW_Weltpunkt\".X"},{"text":", "},{"entity":"@e[type=minecraft:marker,tag=TW_Eingabe,limit=1]","nbt":"data.\"TW_Weltpunkt\".Y"},{"text":", "},{"entity":"@e[type=minecraft:marker,tag=TW_Eingabe,limit=1]","nbt":"data.\"TW_Weltpunkt\".Z"},{"text":" in "},{"entity":"@e[type=minecraft:marker,tag=TW_Eingabe,limit=1]","nbt":"data.\"TW_Weltpunkt\".Welt"}]
 
-execute if entity @s[scores={TW=20028}] run data remove entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Verlauf
-tellraw @s[scores={TW=20028}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Hilfe","interpret":true},{"text":"Der Verlauf der eingetippten Befehle wurde entfernt.","color":"yellow"}]
+tellraw @s[scores={TW=2}] ["",{"text":"Punkt warp","color":"gray","bold":true},{"text":" -- Weltpunkt betreten."}]
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"Punkt"} run scoreboard players set @s TW 20031
+execute if data storage technik_wiki:tw_daten {TW_Befehl:"warp"} run scoreboard players set @s TW 20031
+execute if entity @s[scores={TW=20031}] run function technik_wiki:tw_befehle_weltpunkt with entity @e[type=minecraft:marker,tag=TW_Eingabe,limit=1] data.TW_Weltpunkt

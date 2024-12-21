@@ -1,5 +1,5 @@
 
-tellraw @s ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Hilfe","interpret":true},{"score":{"name":"TW_Verlauf","objective":"TW"}},{"storage":"technik_wiki:tw_daten","nbt":"TW_Verlauf[0]"}]
+tellraw @s ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Hilfe","interpret":true},{"score":{"name":"TW_Verlauf","objective":"TW"} },{"storage":"technik_wiki:tw_daten","nbt":"TW_Verlauf[0]"}]
 
 data remove storage technik_wiki:tw_daten TW_Verlauf[0]
 

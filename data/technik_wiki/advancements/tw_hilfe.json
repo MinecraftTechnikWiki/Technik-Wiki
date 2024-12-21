@@ -3,7 +3,7 @@
 	{
 		"icon":
 		{
-			"item":"minecraft:feather"
+			"id":"minecraft:feather"
 		},
 		"title":"Spielern kann geholfen werden!",
 		"frame":"goal",
@@ -12,7 +12,7 @@
 	"parent":"technik_wiki:tw_befehlsbuch",
 	"criteria":
 	{
-		"Kriterium":
+		"Befehl":
 		{
 			"trigger":"minecraft:impossible"
 		}

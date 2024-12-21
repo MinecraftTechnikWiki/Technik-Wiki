@@ -17,3 +17,5 @@ scoreboard objectives remove TW_Drop
 scoreboard objectives remove TW_Beitritt
 
 kill @e[type=minecraft:marker,tag=TW_Nummer]
+
+forceload remove ~ ~
