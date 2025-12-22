@@ -14,6 +14,7 @@ data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"200
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"2005",Technik:"Impulsgeber",Wiki:"Impulsgeber_(Redstone)",Teleport:"-68 27 419 0 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"2006",Technik:"Zufallsgenerator",Wiki:"Zufallsgenerator_(Redstone)",Teleport:"-132 27 419 0 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"2007",Technik:"Kombinationsschloss",Wiki:"Kombinationsschloss_(Redstone)",Teleport:"-196 27 419 0 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"2008",Technik:"Kabellose Signalübertragung",Wiki:"Kabellose_Signalübertragung_(Redstone)",Teleport:"-260 27 419 0 0",Welt:"redstone_welt"}
 
 
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"3000",Technik:"Schaltnetze",Wiki:"Schaltnetze",Teleport:"0 49 0 0 0",Welt:"redstone_welt"}
@@ -63,6 +64,7 @@ data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"501
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5019",Technik:"Licht-Sensor",Wiki:"Licht-Sensor_(Befehle)",Teleport:"-292 27 -100 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5022",Technik:"Shiftklick-Sensor",Wiki:"Shiftklick-Sensor_(Befehle)",Teleport:"-292 27 -292 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5009",Technik:"Bewegungssensor",Wiki:"Bewegungssensor_(Befehle)",Teleport:"-260 27 -132 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5028",Technik:"Geschwindigkeitssensor",Wiki:"Geschwindigkeitssensor_(Befehle)",Teleport:"-324 27 -196 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5023",Technik:"Koordinaten-Sensor",Wiki:"Koordinaten-Sensor_(Befehle)",Teleport:"-324 27 -132 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5010",Technik:"Blickwinkel-Sensor",Wiki:"Blickwinkel-Sensor_(Befehle)",Teleport:"-260 27 -196 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5024",Technik:"Sichtweiten-Sensor",Wiki:"Sichtweiten-Sensor_(Befehle)",Teleport:"-292 27 -196 90 0",Welt:"redstone_welt"}
@@ -72,6 +74,7 @@ data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"501
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5013",Technik:"Versionen-Sensor",Wiki:"Versionen-Sensor_(Befehle)",Teleport:"-260 27 -292 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5026",Technik:"Spielbeitritt-Sensor",Wiki:"Spielbeitritt-Sensor_(Befehle)",Teleport:"-292 27 -324 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5014",Technik:"Server-Sensor",Wiki:"Server-Sensor_(Befehle)",Teleport:"-260 27 -324 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5029",Technik:"Abwesenheitssensor",Wiki:"Abwesenheitssensor_(Befehle)",Teleport:"-292 27 -260 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5015",Technik:"Dropgenerator",Wiki:"Dropgenerator_(Befehle)",Teleport:"-260 27 -356 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"5016",Technik:"Kugelgenerator",Wiki:"Kugelgenerator_(Befehle)",Teleport:"-260 27 -420 90 0",Welt:"redstone_welt"}
 
@@ -82,29 +85,43 @@ data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"600
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6003",Technik:"Block-Speicher",Wiki:"Block-Speicher_(Redstone)",Teleport:"-420 27 92 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6004",Technik:"Einfachauswahl",Wiki:"Einfachauswahl_(Redstone)",Teleport:"-420 27 28 90 0",Welt:"redstone_welt"}
 data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6005",Technik:"Mehrfachauswahl",Wiki:"Mehrfachauswahl_(Redstone)",Teleport:"-420 27 -36 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6029",Technik:"Benutzerschnittstelle",Wiki:"Benutzerschnittstelle_(Befehle)",Teleport:"-484 27 -36 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6028",Technik:"Benutzeroberfläche",Wiki:"Benutzeroberfläche_(Befehle)",Teleport:"-484 27 -68 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6006",Technik:"Lichtanlage",Wiki:"Lichtanlage_(Redstone)",Teleport:"-420 27 -100 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6007",Technik:"Leuchtfeueranlage",Wiki:"Leuchtfeueranlage_(Redstone)",Teleport:"-420 27 -164 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6008",Technik:"Musikanlage",Wiki:"Musikanlage_(Redstone)",Teleport:"-421 27 -197 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6009",Technik:"Musikgenerator",Wiki:"Musikgenerator_(Redstone)",Teleport:"-420 27 -324 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6010",Technik:"Musik-Walzenspieler",Wiki:"Musik-Walzenspieler_(Redstone)",Teleport:"-420 27 -388 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6011",Technik:"Tür- und Toranlage",Wiki:"Tür-_und_Toranlage_(Redstone)",Teleport:"-421 27 -453 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6012",Technik:"Schleusentür",Wiki:"Schleusentür_(Redstone)",Teleport:"-420 27 -580 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6013",Technik:"Schießanlage",Wiki:"Schießanlage_(Redstone)",Teleport:"-580 27 252 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6014",Technik:"TNT-Kanone",Wiki:"TNT-Kanone_(Redstone)",Teleport:"-581 27 187 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6015",Technik:"Ambossspender",Wiki:"Ambossspender_(Redstone)",Teleport:"-580 27 60 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6016",Technik:"Standort-Markierung",Wiki:"Standort-Markierung_(Befehle)",Teleport:"-580 27 -4 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6017",Technik:"Zonen-Markierung",Wiki:"Zonen-Markierung_(Befehle)",Teleport:"-580 27 -68 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6018",Technik:"Sperrzone",Wiki:"Sperrzone_(Befehle)",Teleport:"-580 27 -132 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6019",Technik:"Käfigzone",Wiki:"Käfigzone_(Befehle)",Teleport:"-580 27 -164 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6027",Technik:"Wartesaal",Wiki:"Wartesaal_(Befehle)",Teleport:"-612 27 -132 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6020",Technik:"Objekt-Steuerung",Wiki:"Objekt-Steuerung_(Befehle)",Teleport:"-580 27 -196 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6021",Technik:"Tageszeitwandler und -sensor",Wiki:"Tageszeitwandler_und_-sensor_(Befehle)",Teleport:"-580 27 -260 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6022",Technik:"Wetterwandler und -sensor",Wiki:"Wetterwandler_und_-sensor_(Befehle)",Teleport:"-580 27 -292 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6023",Technik:"Parcours-Element",Wiki:"Parcours-Element_(Befehle)",Teleport:"-580 27 -324 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6024",Technik:"Parcours",Wiki:"Parcours_(Befehle)",Teleport:"-580 27 -388 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6030",Technik:"Bestenliste",Wiki:"Bestenliste_(Befehle)",Teleport:"-644 27 -100 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6031",Technik:"Mannschaftsverteiler",Wiki:"Mannschaftsverteiler_(Befehle)",Teleport:"-644 27 -196 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6025",Technik:"Labyrinth- und Irrgartengenerator",Wiki:"Labyrinth-_und_Irrgartengenerator_(Befehle)",Teleport:"-581 27 -453 90 0",Welt:"redstone_welt"}
-data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6026",Technik:"Konstruktionsgerüst",Wiki:"Konstruktionsgerüst_(Befehle)",Teleport:"-581 27 -581 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6006",Technik:"Benutzerschnittstelle",Wiki:"Benutzerschnittstelle_(Befehle)",Teleport:"-484 27 -36 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6007",Technik:"Benutzeroberfläche",Wiki:"Benutzeroberfläche_(Befehle)",Teleport:"-484 27 -68 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6008",Technik:"Lichtanlage",Wiki:"Lichtanlage_(Redstone)",Teleport:"-420 27 -100 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6009",Technik:"Leuchtfeueranlage",Wiki:"Leuchtfeueranlage_(Redstone)",Teleport:"-420 27 -164 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6010",Technik:"Musikanlage",Wiki:"Musikanlage_(Redstone)",Teleport:"-421 27 -197 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6011",Technik:"Musikgenerator",Wiki:"Musikgenerator_(Redstone)",Teleport:"-420 27 -324 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6012",Technik:"Musik-Walzenspieler",Wiki:"Musik-Walzenspieler_(Redstone)",Teleport:"-420 27 -388 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6013",Technik:"Tür- und Toranlage",Wiki:"Tür-_und_Toranlage_(Redstone)",Teleport:"-421 27 -453 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6014",Technik:"Schleusentür",Wiki:"Schleusentür_(Redstone)",Teleport:"-420 27 -580 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6015",Technik:"Schießanlage",Wiki:"Schießanlage_(Redstone)",Teleport:"-580 27 252 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6016",Technik:"TNT-Kanone",Wiki:"TNT-Kanone_(Redstone)",Teleport:"-581 27 187 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6017",Technik:"Ambossspender",Wiki:"Ambossspender_(Redstone)",Teleport:"-580 27 60 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6018",Technik:"Standort-Markierung",Wiki:"Standort-Markierung_(Befehle)",Teleport:"-580 27 -4 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6019",Technik:"Zonen-Markierung",Wiki:"Zonen-Markierung_(Befehle)",Teleport:"-580 27 -68 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6020",Technik:"Sperrzone",Wiki:"Sperrzone_(Befehle)",Teleport:"-580 27 -132 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6021",Technik:"Käfigzone",Wiki:"Käfigzone_(Befehle)",Teleport:"-580 27 -164 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6022",Technik:"Objekt-Steuerung",Wiki:"Objekt-Steuerung_(Befehle)",Teleport:"-580 27 -196 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6023",Technik:"Tageszeitwandler und -sensor",Wiki:"Tageszeitwandler_und_-sensor_(Befehle)",Teleport:"-580 27 -260 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6024",Technik:"Wetterwandler und -sensor",Wiki:"Wetterwandler_und_-sensor_(Befehle)",Teleport:"-580 27 -292 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6025",Technik:"Parcours-Element",Wiki:"Parcours-Element_(Befehle)",Teleport:"-580 27 -324 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6026",Technik:"Parcours",Wiki:"Parcours_(Befehle)",Teleport:"-580 27 -388 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6027",Technik:"Bestenliste",Wiki:"Bestenliste_(Befehle)",Teleport:"-644 27 -100 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6028",Technik:"Mannschaftsverteiler",Wiki:"Mannschaftsverteiler_(Befehle)",Teleport:"-644 27 -196 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6029",Technik:"Labyrinth- und Irrgartengenerator",Wiki:"Labyrinth-_und_Irrgartengenerator_(Befehle)",Teleport:"-581 27 -453 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6030",Technik:"Konstruktionsgerüst",Wiki:"Konstruktionsgerüst_(Befehle)",Teleport:"-581 27 -581 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6031",Technik:"Wartesaal",Wiki:"Wartesaal_(Befehle)",Teleport:"-612 27 -132 90 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"6032",Technik:"Mannschaftsauswahl",Wiki:"Mannschaftsauswahl_(Befehle)",Teleport:"-644 27 -228 90 0",Welt:"redstone_welt"}
+
+
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15000",Technik:"Fabrikanlagen",Wiki:"Fabrikanlagen",Teleport:"0 49 0 0 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15001",Technik:"Universalfabrik",Wiki:"Universalfabrik_(Redstone)",Teleport:"259 27 -253 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15002",Technik:"Lagerfabrik",Wiki:"Lagerfabrik_(Redstone)",Teleport:"259 27 -189 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15003",Technik:"Feuerwerksraketenfabrik",Wiki:"Feuerwerksraketenfabrik_(Redstone)",Teleport:"259 27 -157 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15004",Technik:"Shulker-Kisten-Fabrik",Wiki:"Shulker-Kisten-Fabrik_(Redstone)",Teleport:"259 27 -125 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15005",Technik:"Fackelfabrik",Wiki:"Fackelfabrik_(Redstone)",Teleport:"259 27 -93 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15006",Technik:"Kürbiskuchenfabrik",Wiki:"Kürbiskuchenfabrik_(Redstone)",Teleport:"259 27 -61 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15007",Technik:"Bücherregalfabrik",Wiki:"Bücherregalfabrik_(Redstone)",Teleport:"259 27 -29 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15008",Technik:"Buchfabrik",Wiki:"Buchfabrik_(Redstone)",Teleport:"259 27 3 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15009",Technik:"Truhenfabrik",Wiki:"Truhenfabrik_(Redstone)",Teleport:"259 27 35 270 0",Welt:"redstone_welt"}
+data modify storage technik_wiki:tw_daten TW_Techniken append value {Nummer:"15010",Technik:"Rahmenfabrik",Wiki:"Rahmenfabrik_(Redstone)",Teleport:"259 27 67 270 0",Welt:"redstone_welt"}

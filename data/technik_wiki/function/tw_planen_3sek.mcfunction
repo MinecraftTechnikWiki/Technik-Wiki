@@ -5,18 +5,18 @@ execute as @a[tag=!TW_Nummer] run function technik_wiki:tw_nummer
 
 execute as @a store result score @s TW_Test run clear @s minecraft:writable_book[minecraft:custom_data={TW_Befehlsbuch:true}] 0
 clear @a[scores={TW_Test=2..}] minecraft:writable_book[minecraft:custom_data={TW_Befehlsbuch:true}]
-execute as @a unless entity @s[scores={TW_Test=1}] run give @s minecraft:writable_book[minecraft:lore=['"Tippe hier einen Befehl ein"','"(ohne Enter) und drücke"','"Fertig. Beispiel: Hilfe um"','"eine Übersicht über alle"','"eigens für diese Welt"','"geschaffenen (Vanilla)"','"Befehle zu erhalten"'],minecraft:custom_name='{"translate":"Befehlsbuch","color":"light_purple","italic":false}',minecraft:custom_data={TW_Befehlsbuch:true}]
+execute as @a unless entity @s[scores={TW_Test=1}] run give @s minecraft:writable_book[minecraft:lore=["Tippe hier einen Befehl ein","(ohne Enter) und drücke","Fertig. Beispiel: Hilfe um","eine Übersicht über alle","eigens für diese Welt","geschaffenen (Vanilla)","Befehle zu erhalten"],minecraft:custom_name={translate:"Befehlsbuch",color:"light_purple",italic:false},minecraft:custom_data={TW_Befehlsbuch:true}]
 
 # Willkommen
 execute if entity @p[tag=!TW_Willkommen] run scoreboard players add Spieler TW_Beitritt 1
 execute if score Spieler TW_Beitritt matches 2.. run scoreboard objectives setdisplay sidebar TW_Beitritt
 execute if score Spieler TW_Beitritt matches 2.. run advancement grant @a[advancements={technik_wiki:tw_mehrspieler=false}] only technik_wiki:tw_mehrspieler
-execute if entity @p[tag=!TW_Willkommen] as @a run tellraw @s ["",{"translate":"Wir begrüßen","color":"yellow","bold":true }," ",{"selector":"@s[tag=!TW_Willkommen]","color":"green","underlined":true}]
+execute if entity @p[tag=!TW_Willkommen] as @a run tellraw @s ["",{translate:"Wir begrüßen",color:"yellow",bold:true }," ",{selector:"@s[tag=!TW_Willkommen]",color:"green",underlined:true}]
 execute as @p[tag=!TW_Willkommen] at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append value "Begrüßung"
 tag @p[tag=!TW_Willkommen] add TW_Willkommen
 
 # Neuling auf der Welt
-tellraw @a[tag=!TW_Kein_Beitritt,scores={TW_Beitritt=1..}] ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"translate":"Dein Inventar wurde gelöscht und du wurdest zum Startpunkt zurück teleportiert.","color":"yellow","bold":true}]
+tellraw @a[tag=!TW_Kein_Beitritt,scores={TW_Beitritt=1..}] ["",{storage:"technik_wiki:tw_daten",nbt:"TW_Info",interpret:true},{translate:"Dein Inventar wurde gelöscht und du wurdest zum Startpunkt zurück teleportiert.",color:"yellow",bold:true}]
 clear @a[tag=!TW_Kein_Beitritt,scores={TW_Beitritt=1..}]
 execute as @a[scores={TW_Beitritt=1..}] at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append value "Startzeit"
 execute as @a[tag=!TW_Kein_Beitritt,scores={TW_Beitritt=1..}] at @s store success score @s TW as @e[type=minecraft:marker,tag=TW_Nummer] if score @s TW_Nummer = @p TW_Nummer run data modify entity @s data.TW_Befehle append value "Startpunkt"

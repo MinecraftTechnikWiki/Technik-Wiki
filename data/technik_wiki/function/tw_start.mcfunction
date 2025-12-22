@@ -13,19 +13,19 @@ worldborder set 3000
 forceload add ~ ~
 
 # Alle wichtigen Spielregeln werden gesetzt.
-gamerule spawnRadius 0
-gamerule announceAdvancements false
-gamerule commandBlockOutput false
-gamerule disableRaids true
-gamerule disableElytraMovementCheck true
-gamerule doDaylightCycle false
-gamerule doWeatherCycle false
-gamerule doImmediateRespawn true
-gamerule doInsomnia false
-gamerule doPatrolSpawning false
-gamerule doTraderSpawning false
-gamerule keepInventory true
-gamerule commandModificationBlockLimit 32768
+gamerule respawn_radius 0
+gamerule show_advancement_messages false
+gamerule command_block_output false
+gamerule raids true
+gamerule elytra_movement_check true
+gamerule advance_time false
+gamerule advance_weather false
+gamerule immediate_respawn true
+gamerule spawn_phantoms false
+gamerule spawn_patrols false
+gamerule spawn_wandering_traders false
+gamerule keep_inventory true
+gamerule max_block_modifications 32768
 
 # Planfunktionen
 schedule function technik_wiki:tw_planen_3sek 1t replace

@@ -29,4 +29,4 @@ execute as @a[tag=TW_Nachtsicht] at @s store success score @s TW as @e[type=mine
 # Erinnerung
 execute store result score #TW_Test TW run scoreboard objectives list
 execute if score #TW_Test TW < #TW_Ziele TW run function technik_wiki:tw_punkteziele
-execute if score #TW_Test TW > #TW_Ziele TW run tellraw @a ["",{"storage":"technik_wiki:tw_daten","nbt":"TW_Info","interpret":true},{"translate":"Bitte vergiss nicht die noch eingeschalteten Techniken wieder auszuschalten, um Leistung zu sparen.","color":"yellow","bold":true}]
+execute if score #TW_Test TW > #TW_Ziele TW run tellraw @a ["",{storage:"technik_wiki:tw_daten",nbt:"TW_Info",interpret:true},{translate:"Bitte vergiss nicht die noch eingeschalteten Techniken wieder auszuschalten, um Leistung zu sparen.",color:"yellow",bold:true}]

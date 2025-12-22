@@ -2,7 +2,7 @@
 scoreboard players set #TW_Daten TW 1
 
 # Welt-Version
-scoreboard players set #TW_Version TW 20
+scoreboard players set #TW_Version TW 21
 
 # Welten: 1 Redstone, 2 Schiene, 3 Mechanik
 scoreboard players set #TW_Welt TW 0
@@ -20,13 +20,13 @@ execute in technik_wiki:mechanik_welt if dimension technik_wiki:mechanik_welt ru
 data modify storage technik_wiki:tw_daten TW_Welt_Info set value {}
 
 # Erweitert-Info im Chat
-data modify storage technik_wiki:tw_daten TW_Erweitert set value '["",{"text":"[","color":"dark_gray"},{"text":"ERWEITERT","hoverEvent":{"action":"show_text","contents":{"translate":"Erweiterter Spielmodus"} },"color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]'
+data modify storage technik_wiki:tw_daten TW_Erweitert set value ["",{text:"[",color:"dark_gray"},{text:"ERWEITERT",hover_event:{action:"show_text",value:{translate:"Erweiterter Spielmodus"} },color:"gold",bold:true},{text:"] ",color:"dark_gray"}]
 
 # Welt-Info im Chat
-data modify storage technik_wiki:tw_daten TW_Info set value '["",{"text":"[","color":"dark_gray"},{"text":"WELT-INFO","hoverEvent":{"action":"show_text","contents":{"translate":"Datenpaket aufgerufen"} },"color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]'
+data modify storage technik_wiki:tw_daten TW_Info set value ["",{text:"[",color:"dark_gray"},{text:"WELT-INFO",hover_event:{action:"show_text",value:{translate:"Datenpaket aufgerufen"} },color:"gold",bold:true},{text:"] ",color:"dark_gray"}]
 
 # Hilfe-Info im Chat
-data modify storage technik_wiki:tw_daten TW_Hilfe set value '["",{"text":"[","color":"dark_gray"},{"text":"BEFEHL","hoverEvent":{"action":"show_text","contents":{"translate":"Befehl"} },"color":"yellow","bold":true},{"text":"] ","color":"dark_gray"}]'
+data modify storage technik_wiki:tw_daten TW_Hilfe set value ["",{text:"[",color:"dark_gray"},{text:"BEFEHL",hover_event:{action:"show_text",value:{translate:"Befehl"} },color:"yellow",bold:true},{text:"] ",color:"dark_gray"}]
 
 # Techniken mit IDs, Wiki-Links und Koordinaten
 data modify storage technik_wiki:tw_daten TW_Techniken set value []
